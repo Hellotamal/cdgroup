@@ -215,7 +215,12 @@
         </nav>
 
         <!-- Header Actions -->
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Day / Night Theme Toggle Button -->
+          <button id="themeToggleBtn" aria-label="Toggle Day or Night Mode" class="p-2 rounded-full border border-gray-300 hover:bg-gray-200 transition flex items-center justify-center w-9 h-9 shadow-sm" title="Toggle Day/Night Mode">
+            <i id="themeIcon" class="fa-solid fa-moon text-gray-700 text-sm"></i>
+          </button>
+
           <button id="openRFQBtn" class="hidden sm:inline-flex btn-white text-xs py-2 px-3 shadow-sm whitespace-nowrap">
             <i class="fa-solid fa-basket-shopping text-[#C5A059]"></i> Quote Basket (<span class="rfq-count font-bold">0</span>)
           </button>

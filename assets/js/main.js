@@ -3,6 +3,68 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Automatic Day / Night Mode Handler
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const themeIcon = document.getElementById('themeIcon');
+
+  function initTheme() {
+    const savedTheme = localStorage.getItem('cdgroup_theme');
+    if (savedTheme) {
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+        updateThemeIcon(true);
+      } else {
+        document.documentElement.classList.remove('dark');
+        updateThemeIcon(false);
+      }
+    } else {
+      // Automatic detection based on system preferences / local time
+      const currentHour = new Date().getHours();
+      const isNightTime = currentHour >= 18 || currentHour < 6;
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (prefersDark || isNightTime) {
+        document.documentElement.classList.add('dark');
+        updateThemeIcon(true);
+      } else {
+        document.documentElement.classList.remove('dark');
+        updateThemeIcon(false);
+      }
+    }
+  }
+
+  function updateThemeIcon(isDark) {
+    if (!themeIcon) return;
+    if (isDark) {
+      themeIcon.className = 'fa-solid fa-sun text-amber-400 text-sm';
+    } else {
+      themeIcon.className = 'fa-solid fa-moon text-gray-700 text-sm';
+    }
+  }
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('cdgroup_theme', isDark ? 'dark' : 'light');
+      updateThemeIcon(isDark);
+      showToast(isDark ? 'Switched to Night Mode 🌙' : 'Switched to Day Mode ☀️');
+    });
+  }
+
+  // Listen to system preference changes automatically
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (!localStorage.getItem('cdgroup_theme')) {
+      if (e.matches) {
+        document.documentElement.classList.add('dark');
+        updateThemeIcon(true);
+      } else {
+        document.documentElement.classList.remove('dark');
+        updateThemeIcon(false);
+      }
+    }
+  });
+
+  initTheme();
+
   // Mobile Navigation Toggle
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
