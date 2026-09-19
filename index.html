@@ -54,7 +54,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
-  <!-- Custom CSS (East Template Aesthetic) -->
+  <!-- Custom CSS (FMCG B2B Single Page UI) -->
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Structured Data JSON-LD Schema for SEO -->
@@ -99,12 +99,12 @@
 </head>
 <body class="bg-[#F4F5F0] text-gray-900 antialiased">
 
-  <!-- Top Announcement Bar (Minimalist) -->
-  <div class="bg-[#111827] text-white py-2 text-xs">
+  <!-- Top Announcement Bar (Minimalist FMCG Banner) -->
+  <div class="bg-[#111827] text-white py-2 text-xs border-b border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center flex-wrap gap-2">
       <div class="flex items-center gap-4 text-gray-300">
         <span class="inline-flex items-center gap-1.5 text-[#C5A059] font-medium">
-          <i class="fa-solid fa-truck-fast"></i> Serving Entire Northeast India
+          <i class="fa-solid fa-truck-fast"></i> Serving All 8 Northeast Indian States
         </span>
         <span class="hidden md:inline text-gray-600">|</span>
         <span class="hidden md:inline"><i class="fa-solid fa-shield-halved text-[#C5A059] mr-1"></i> GSTIN: <strong>18AULPD4220A2Z8</strong></span>
@@ -122,7 +122,7 @@
     </div>
   </div>
 
-  <!-- Header / Navigation Bar (East Template Style) -->
+  <!-- Header / Navigation Bar -->
   <header class="sticky top-0 z-50 east-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
@@ -133,25 +133,26 @@
             <img src="assets/images/logo.png" alt="CD Group Logo" class="w-full h-full object-cover rounded-full">
           </div>
           <div>
-            <span class="text-xl font-bold tracking-tight text-gray-900">CD GROUP</span>
-            <span class="hidden sm:inline-block text-[10px] tracking-widest text-gray-500 uppercase ml-2 font-medium">B2B Enterprise</span>
+            <span class="text-xl font-extrabold tracking-tight text-gray-900">CD GROUP</span>
+            <span class="hidden sm:inline-block text-[10px] tracking-widest text-gray-500 uppercase ml-2 font-semibold">B2B Enterprise</span>
           </div>
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-700">
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-700">
           <a href="#home" class="hover:text-gray-900 transition">Home</a>
           <a href="#divisions" class="hover:text-gray-900 transition">Divisions</a>
           <a href="#leadership" class="hover:text-gray-900 transition">Leadership</a>
           <a href="#catalog" class="hover:text-gray-900 transition">Product Catalog</a>
+          <a href="#why-us" class="hover:text-gray-900 transition">Why CD Group</a>
           <a href="#journal" class="hover:text-gray-900 transition">Office Gallery</a>
           <a href="#compliance" class="hover:text-gray-900 transition">Compliance</a>
         </nav>
 
-        <!-- Header Action: Get In Touch Pill Button -->
+        <!-- Header Actions -->
         <div class="flex items-center gap-3">
-          <button id="openRFQBtn" class="hidden sm:inline-flex btn-white text-xs py-2 px-4">
-            <i class="fa-solid fa-box-open text-[#C5A059]"></i> RFQ (<span class="rfq-count font-bold">0</span>)
+          <button id="openRFQBtn" class="hidden sm:inline-flex btn-white text-xs py-2 px-4 shadow-sm">
+            <i class="fa-solid fa-basket-shopping text-[#C5A059]"></i> RFQ (<span class="rfq-count font-bold">0</span>)
           </button>
           <a href="#contact" class="btn-black">Get in touch</a>
           
@@ -170,35 +171,54 @@
       <a href="#divisions" class="block py-2 text-gray-800 font-medium">Business Divisions</a>
       <a href="#leadership" class="block py-2 text-gray-800 font-medium">Leadership</a>
       <a href="#catalog" class="block py-2 text-gray-800 font-medium">Product Catalog</a>
+      <a href="#why-us" class="block py-2 text-gray-800 font-medium">Why CD Group</a>
       <a href="#journal" class="block py-2 text-gray-800 font-medium">Office Gallery</a>
       <a href="#compliance" class="block py-2 text-gray-800 font-medium">Government Registrations</a>
       <a href="#contact" class="btn-black w-full justify-center mt-2">Get in touch</a>
     </div>
   </header>
 
-  <!-- HERO BANNER SECTION (Pixpa "East" Template Hero Layout) -->
+  <!-- HERO BANNER SECTION (FMCG Single Page Layout) -->
   <section id="home" class="py-6 lg:py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         
-        <!-- Left Banner: Muted Sage Block -->
-        <div class="lg:col-span-6 bg-[#8E9F94] text-white p-8 sm:p-12 lg:p-16 rounded-[24px] flex flex-col justify-between space-y-8">
+        <!-- Left Hero Banner -->
+        <div class="lg:col-span-6 bg-[#8E9F94] text-white p-8 sm:p-12 lg:p-16 rounded-[24px] flex flex-col justify-between space-y-8 shadow-sm">
           <div class="space-y-6">
-            <span class="inline-block text-xs font-semibold uppercase tracking-widest bg-white/20 text-white px-3 py-1 rounded-full">
-              B2B Enterprise • Guwahati, Assam
-            </span>
-            <h1 class="text-3xl sm:text-5xl font-bold leading-tight tracking-tight">
-              Empowering B2B Trade Across Northeast India
+            <div class="inline-flex items-center gap-2 bg-white/20 text-white px-3.5 py-1.5 rounded-full text-xs font-semibold">
+              <i class="fa-solid fa-certificate text-[#C5A059]"></i> Guwahati Hub • Serving All 8 Northeast States
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight tracking-tight">
+              Northeast India's Trusted FMCG & B2B Supply Network
             </h1>
-            <p class="text-white/90 text-sm sm:text-base leading-relaxed max-w-lg">
-              CD Group operates three major divisions: F.M.C.G. Wholesale Distribution, Construction & Building Material Supply, and Assam Tea Packaging & Marketing.
+            
+            <p class="text-white/90 text-sm sm:text-base leading-relaxed max-w-lg font-normal">
+              CD Group operates three primary business verticals: <strong>F.M.C.G. Wholesale Distribution</strong>, <strong>Building Construction & Hardware Supply</strong>, and <strong>Assam Tea Packaging & Distribution Marketing</strong>.
             </p>
           </div>
 
-          <div class="pt-4 flex items-center gap-4 flex-wrap">
+          <!-- Hero Metrics Bar -->
+          <div class="grid grid-cols-3 gap-3 pt-4 border-t border-white/20">
+            <div>
+              <div class="text-2xl font-extrabold text-white">8 States</div>
+              <div class="text-[10px] text-white/80 uppercase font-semibold">Northeast Network</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-white">3 Divisions</div>
+              <div class="text-[10px] text-white/80 uppercase font-semibold">Core Verticals</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-white">100%</div>
+              <div class="text-[10px] text-white/80 uppercase font-semibold">GST Compliant</div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex items-center gap-4 flex-wrap">
             <a href="#divisions" class="btn-white">
-              Explore Divisions
+              Explore 3 Verticals
             </a>
             <a href="#rfq-form" class="btn-black">
               Request B2B Quote
@@ -207,13 +227,15 @@
         </div>
 
         <!-- Right Hero Visual Showcase Frame -->
-        <div class="lg:col-span-6 rounded-[24px] overflow-hidden relative min-h-[350px] lg:min-h-full bg-gray-200">
+        <div class="lg:col-span-6 rounded-[24px] overflow-hidden relative min-h-[380px] lg:min-h-full bg-gray-200 shadow-sm">
           <img src="assets/images/2.jpeg" alt="CD Group Wall Display Logo" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
-            <div class="text-white space-y-1">
-              <span class="text-xs font-semibold uppercase tracking-wider text-[#C5A059]">Guwahati Central Hub</span>
-              <h3 class="text-xl font-bold">CD Group Headquarters</h3>
-              <p class="text-xs text-gray-300">Maligaon Gate No-3, NFR Railway HQ, Near HDFC Bank</p>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex items-end p-8">
+            <div class="text-white space-y-2">
+              <span class="inline-block px-3 py-1 bg-[#C5A059] text-black text-[10px] font-extrabold uppercase rounded-full tracking-wider">
+                Headquarters Signage
+              </span>
+              <h3 class="text-2xl font-bold">CD Group Corporate Office</h3>
+              <p class="text-xs text-gray-300">Maligaon Gate No-3, NFR Railway HQ, Near HDFC Bank, Guwahati, Assam - 781011</p>
             </div>
           </div>
         </div>
@@ -223,13 +245,16 @@
     </div>
   </section>
 
-  <!-- FEATURED BUSINESS VERTICALS (Matching "Featured Products" in East Template) -->
+  <!-- FEATURED BUSINESS DIVISIONS SHOWCASE -->
   <section id="divisions" class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="text-3xl font-bold text-gray-900">Featured Business Divisions</h2>
-        <p class="text-sm text-gray-600 mt-2">Discover our three specialized operating verticals across Northeast India.</p>
+        <span class="text-xs font-bold uppercase tracking-widest text-[#C5A059] bg-[#C5A059]/10 px-3.5 py-1.5 rounded-full inline-block mb-3">
+          Specialized Business Verticals
+        </span>
+        <h2 class="text-3xl font-extrabold text-gray-900">Core Business Operations</h2>
+        <p class="text-sm text-gray-600 mt-2">Discover our three specialized operating verticals supplying Northeast India.</p>
       </div>
 
       <!-- 3 Vertical Cards Grid -->
@@ -237,8 +262,11 @@
         
         <!-- Vertical 1: FMCG -->
         <div class="east-card group">
-          <div class="east-img-frame h-72">
+          <div class="east-img-frame h-72 relative">
             <img src="assets/images/1.jpeg" alt="FMCG Wholesale Division" class="w-full h-full object-cover">
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-gray-900 uppercase">
+              F.M.C.G. Supply
+            </span>
           </div>
           <div class="p-6 space-y-3">
             <span class="text-[11px] font-bold uppercase tracking-widest text-[#C5A059]">Division 01</span>
@@ -248,7 +276,7 @@
             </p>
             <div class="pt-2">
               <a href="#catalog" onclick="filterCategory('fmcg')" class="text-xs font-bold text-gray-900 hover:text-[#C5A059] inline-flex items-center gap-1">
-                Browse FMCG Products <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                Browse FMCG Catalog <i class="fa-solid fa-arrow-right text-[10px]"></i>
               </a>
             </div>
           </div>
@@ -256,8 +284,11 @@
 
         <!-- Vertical 2: Construction -->
         <div class="east-card group">
-          <div class="east-img-frame h-72">
+          <div class="east-img-frame h-72 relative">
             <img src="assets/images/3.jpeg" alt="Construction Supply Division" class="w-full h-full object-cover">
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-gray-900 uppercase">
+              Building Materials
+            </span>
           </div>
           <div class="p-6 space-y-3">
             <span class="text-[11px] font-bold uppercase tracking-widest text-[#C5A059]">Division 02</span>
@@ -267,7 +298,7 @@
             </p>
             <div class="pt-2">
               <a href="#catalog" onclick="filterCategory('construction')" class="text-xs font-bold text-gray-900 hover:text-[#C5A059] inline-flex items-center gap-1">
-                Browse Construction Supply <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                Browse Building Materials <i class="fa-solid fa-arrow-right text-[10px]"></i>
               </a>
             </div>
           </div>
@@ -275,14 +306,17 @@
 
         <!-- Vertical 3: Tea Packaging -->
         <div class="east-card group">
-          <div class="east-img-frame h-72">
+          <div class="east-img-frame h-72 relative">
             <img src="assets/images/9.jpeg" alt="Tea Packaging Division" class="w-full h-full object-cover">
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-gray-900 uppercase">
+              Assam Tea Trade
+            </span>
           </div>
           <div class="p-6 space-y-3">
             <span class="text-[11px] font-bold uppercase tracking-widest text-[#C5A059]">Division 03</span>
             <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#6B7F72] transition">Tea Packaging & Distribution</h3>
             <p class="text-xs text-gray-600 leading-relaxed">
-              Garden-fresh Assam CTC & Orthodox tea sourcing, custom private label pouch packaging, tea cup distribution, and marketing.
+              Garden-fresh Assam CTC & Orthodox tea sourcing, custom private label pouch packaging, tea cup distribution, and brand marketing.
             </p>
             <div class="pt-2">
               <a href="#catalog" onclick="filterCategory('tea')" class="text-xs font-bold text-gray-900 hover:text-[#C5A059] inline-flex items-center gap-1">
@@ -302,7 +336,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left: High-Impact Owner Portrait Card -->
+        <!-- Left: Owner Portrait Card -->
         <div class="lg:col-span-5 relative">
           <div class="rounded-[24px] overflow-hidden shadow-xl border border-gray-200 bg-[#F4F5F0]">
             <img src="assets/images/chandra-das.jpg" alt="Mrs. Chandra Das - Business Owner CD Group" class="w-full h-auto object-cover">
@@ -325,7 +359,7 @@
             <span class="text-xs font-bold uppercase tracking-widest text-[#C5A059] bg-[#C5A059]/10 px-3.5 py-1.5 rounded-full inline-block">
               Corporate Governance & Leadership
             </span>
-            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
               Mrs. Chandra Das
             </h2>
             <p class="text-sm font-semibold text-[#6B7F72]">
@@ -373,7 +407,58 @@
     </div>
   </section>
 
-  <!-- MINIMALIST INTENTIONAL B2B BANNER (Matching Dark Section in East Template) -->
+  <!-- WHY CD GROUP - FEATURE HIGHLIGHTS -->
+  <section id="why-us" class="py-16 bg-[#EAECE6]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#C5A059] bg-white px-3.5 py-1.5 rounded-full inline-block mb-3 border border-gray-200">
+          Why B2B Partners Choose Us
+        </span>
+        <h2 class="text-3xl font-extrabold text-gray-900">Why Partner With CD Group</h2>
+        <p class="text-sm text-gray-600 mt-2">Delivering excellence, compliance, and seamless distribution across Northeast India.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="east-card p-6 bg-white space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-[#F4F5F0] flex items-center justify-center text-[#C5A059] text-xl font-bold">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+          </div>
+          <h4 class="font-bold text-gray-900 text-base">Guwahati Central Hub</h4>
+          <p class="text-xs text-gray-600 leading-relaxed">Strategic dispatch warehouse situated in Maligaon, Guwahati connecting fast logistics to all 8 Northeast states.</p>
+        </div>
+
+        <div class="east-card p-6 bg-white space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-[#F4F5F0] flex items-center justify-center text-[#C5A059] text-xl font-bold">
+            <i class="fa-solid fa-file-shield"></i>
+          </div>
+          <h4 class="font-bold text-gray-900 text-base">Verified Compliance</h4>
+          <p class="text-xs text-gray-600 leading-relaxed">100% statutory legal compliance with active GSTIN, GMC Trade License, and MSME UDYAM Registrations.</p>
+        </div>
+
+        <div class="east-card p-6 bg-white space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-[#F4F5F0] flex items-center justify-center text-[#C5A059] text-xl font-bold">
+            <i class="fa-solid fa-[#C5A059] fa-wheat-awn"></i>
+          </div>
+          <h4 class="font-bold text-gray-900 text-base">Direct Sourcing</h4>
+          <p class="text-xs text-gray-600 leading-relaxed">Direct garden sourcing for Assam CTC teas, premium quality food grains, and certified steel/cement brands.</p>
+        </div>
+
+        <div class="east-card p-6 bg-white space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-[#F4F5F0] flex items-center justify-center text-[#C5A059] text-xl font-bold">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+          <h4 class="font-bold text-gray-900 text-base">Strategic Governance</h4>
+          <p class="text-xs text-gray-600 leading-relaxed">Led by Mrs. Chandra Das (MBA Sales & Marketing) with 10+ years experience and excellent corporate/govt relations.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MINIMALIST INTENTIONAL B2B BANNER -->
   <section class="east-dark-section py-20">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
       
@@ -382,11 +467,11 @@
         <i class="fa-solid fa-handshake font-light"></i>
       </div>
 
-      <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-white max-w-3xl mx-auto leading-snug">
+      <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white max-w-3xl mx-auto leading-snug">
         Minimalist, Intentional B2B Operations Across Assam & Northeast India
       </h2>
 
-      <p class="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
+      <p class="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto font-medium">
         BUILDING TRUST • DRIVING GROWTH • TOGETHER WE GROW
       </p>
 
@@ -405,7 +490,7 @@
       
       <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
         <div>
-          <h2 class="text-3xl font-bold text-gray-900">Wholesale B2B Catalog</h2>
+          <h2 class="text-3xl font-extrabold text-gray-900">Wholesale B2B Catalog</h2>
           <p class="text-xs sm:text-sm text-gray-600 mt-1">Select products to build your custom Request for Quotation (RFQ) basket.</p>
         </div>
 
@@ -435,7 +520,7 @@
             <p class="product-desc text-xs text-gray-600 mb-4">Basmati/non-basmati rice, Toor/Chana/Masoor dal, and refined flour in bulk quintal bags.</p>
           </div>
           <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-500">MOQ: 50 Bags</span>
+            <span class="text-[11px] text-gray-500 font-semibold"><i class="fa-solid fa-box text-[#C5A059] mr-1"></i> MOQ: 50 Bags</span>
             <button onclick="addToRFQ('Assam Food Grains & Pulses', 'fmcg', '50 Bags')" class="btn-black text-xs py-2 px-4">
               + Add to RFQ
             </button>
@@ -450,7 +535,7 @@
             <p class="product-desc text-xs text-gray-600 mb-4">Turmeric, red chili, cumin, coriander, and mixed spices packed for commercial supply.</p>
           </div>
           <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-500">MOQ: 20 Cases</span>
+            <span class="text-[11px] text-gray-500 font-semibold"><i class="fa-solid fa-box text-[#C5A059] mr-1"></i> MOQ: 20 Cases</span>
             <button onclick="addToRFQ('Wholesale Spices', 'fmcg', '20 Cases')" class="btn-black text-xs py-2 px-4">
               + Add to RFQ
             </button>
@@ -465,7 +550,7 @@
             <p class="product-desc text-xs text-gray-600 mb-4">High-tensile seismic-resistant TMT rebars for infrastructure & building projects.</p>
           </div>
           <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-500">MOQ: 5 Tonnes</span>
+            <span class="text-[11px] text-gray-500 font-semibold"><i class="fa-solid fa-box text-[#C5A059] mr-1"></i> MOQ: 5 Tonnes</span>
             <button onclick="addToRFQ('TMT Rebars', 'construction', '5 MT')" class="btn-black text-xs py-2 px-4">
               + Add to RFQ
             </button>
@@ -480,7 +565,7 @@
             <p class="product-desc text-xs text-gray-600 mb-4">Portland cement (PPC/OPC 53), GI pipes, plumbing fittings, and structural hardware.</p>
           </div>
           <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-500">MOQ: 100 Bags</span>
+            <span class="text-[11px] text-gray-500 font-semibold"><i class="fa-solid fa-box text-[#C5A059] mr-1"></i> MOQ: 100 Bags</span>
             <button onclick="addToRFQ('Cement & Hardware', 'construction', '100 Bags')" class="btn-black text-xs py-2 px-4">
               + Add to RFQ
             </button>
@@ -495,7 +580,7 @@
             <p class="product-desc text-xs text-gray-600 mb-4">Aromatic CTC granular and Orthodox teas sourced directly from Assam tea estates.</p>
           </div>
           <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-500">MOQ: 100 kg</span>
+            <span class="text-[11px] text-gray-500 font-semibold"><i class="fa-solid fa-box text-[#C5A059] mr-1"></i> MOQ: 100 kg</span>
             <button onclick="addToRFQ('Assam CTC Tea', 'tea', '100 kg')" class="btn-black text-xs py-2 px-4">
               + Add to RFQ
             </button>
@@ -510,7 +595,7 @@
             <p class="product-desc text-xs text-gray-600 mb-4">Custom printed metallic pouches, tea boxes, and eco-friendly paper tea cups.</p>
           </div>
           <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-500">MOQ: 5,000 Pcs</span>
+            <span class="text-[11px] text-gray-500 font-semibold"><i class="fa-solid fa-box text-[#C5A059] mr-1"></i> MOQ: 5,000 Pcs</span>
             <button onclick="addToRFQ('Tea Packaging & Cups', 'tea', '5000 Pcs')" class="btn-black text-xs py-2 px-4">
               + Add to RFQ
             </button>
@@ -522,12 +607,12 @@
     </div>
   </section>
 
-  <!-- CORPORATE GALLERY / THE JOURNAL GRID (Matching "The Journal" in East Template) -->
+  <!-- CORPORATE GALLERY GRID -->
   <section id="journal" class="py-16 bg-[#EAECE6]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="text-3xl font-bold text-gray-900">Corporate Facilities & Gallery</h2>
+        <h2 class="text-3xl font-extrabold text-gray-900">Corporate Facilities & Gallery</h2>
         <p class="text-sm text-gray-600 mt-1">Real glimpses of our administrative headquarters in Guwahati, Assam.</p>
       </div>
 
@@ -576,7 +661,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="text-3xl font-bold text-gray-900">Verified Compliance & Credentials</h2>
+        <h2 class="text-3xl font-extrabold text-gray-900">Verified Compliance & Credentials</h2>
         <p class="text-sm text-gray-600 mt-1">Full statutory compliance with Government of India and Assam Municipal authorities.</p>
       </div>
 
@@ -729,7 +814,7 @@
             </div>
 
             <div class="pt-2 border-t border-gray-100">
-              <span class="text-[11px] text-gray-500 block mb-2">Exact Coordinates: 26.159940, 91.703805</span>
+              <span class="text-[11px] text-gray-500 block mb-2 font-medium">Exact Coordinates: 26.159940, 91.703805</span>
               <a href="https://www.google.com/maps/dir/?api=1&destination=26.15994035834401,91.70380551749498" target="_blank" rel="noopener" class="btn-black text-xs w-full justify-center">
                 <i class="fa-solid fa-diamond-turn-right"></i> Get Directions on Google Maps
               </a>
@@ -763,11 +848,12 @@
       
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-gray-800">
         <div>
-          <span class="text-xl font-bold tracking-tight text-white block">CD GROUP</span>
+          <span class="text-xl font-extrabold tracking-tight text-white block">CD GROUP</span>
           <p class="text-gray-400 text-xs mt-1">Building Trust • Driving Growth • Together We Grow</p>
         </div>
-        <div class="flex items-center gap-6 text-gray-300">
+        <div class="flex items-center gap-6 text-gray-300 font-semibold">
           <a href="#divisions" class="hover:text-white transition">Divisions</a>
+          <a href="#leadership" class="hover:text-white transition">Leadership</a>
           <a href="#catalog" class="hover:text-white transition">Catalog</a>
           <a href="#compliance" class="hover:text-white transition">Compliance</a>
           <a href="#contact" class="hover:text-white transition">Contact</a>
