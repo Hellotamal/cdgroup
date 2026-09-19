@@ -672,14 +672,66 @@
       
       <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
         <div>
-          <h2 class="text-3xl font-extrabold text-gray-900">Wholesale B2B Catalog</h2>
-          <p class="text-xs sm:text-sm text-gray-600 mt-1">Select products to build your custom Request for Quotation (RFQ) basket.</p>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#C5A059] bg-[#C5A059]/10 px-3.5 py-1.5 rounded-full inline-block mb-2">
+            6-Tier B2B Architecture Hierarchy
+          </span>
+          <h2 class="text-3xl font-extrabold text-gray-900">Wholesale B2B Product Catalog</h2>
+          <p class="text-xs sm:text-sm text-gray-600 mt-1">Business Division &rarr; Product Category &rarr; Product &rarr; Specification &rarr; MOQ &rarr; RFQ</p>
         </div>
 
         <!-- Search Bar -->
         <div class="w-full md:w-80 relative">
-          <input type="text" id="productSearch" placeholder="Search products, materials..." class="w-full bg-white border border-gray-300 rounded-full py-2.5 px-4 pl-10 text-xs text-gray-800 placeholder-gray-400 focus:outline-none focus:border-gray-900 transition">
+          <input type="text" id="productSearch" placeholder="Search products, specs, categories..." class="w-full bg-white border border-gray-300 rounded-full py-2.5 px-4 pl-10 text-xs text-gray-800 placeholder-gray-400 focus:outline-none focus:border-gray-900 transition">
           <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-gray-400 text-xs"></i>
+        </div>
+      </div>
+
+      <!-- 6-TIER B2B ARCHITECTURE STEPPER BANNER -->
+      <div class="mb-10 p-6 rounded-2xl bg-[#F4F5F0] border border-gray-200 shadow-sm">
+        <div class="text-center max-w-2xl mx-auto mb-6">
+          <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#C5A059] bg-white px-3 py-1 rounded-full inline-block mb-1.5 border border-gray-200">
+            Standardised Sourcing Flow
+          </span>
+          <h3 class="text-xl font-extrabold text-gray-900">The 6-Tier B2B Sourcing Hierarchy</h3>
+          <p class="text-xs text-gray-600 mt-1">Every product in our catalog follows strict multi-tier verification ensuring corporate compliance, precise specifications, transparent MOQs, and effortless RFQ quotation.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-3 text-center">
+          <div class="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
+            <span class="w-7 h-7 rounded-full bg-[#111827] text-[#C5A059] text-xs font-bold flex items-center justify-center mb-1.5">1</span>
+            <span class="text-[9px] font-bold text-[#6B7F72] uppercase tracking-wider block">Tier 01</span>
+            <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">Business Division</strong>
+          </div>
+
+          <div class="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
+            <span class="w-7 h-7 rounded-full bg-[#111827] text-[#C5A059] text-xs font-bold flex items-center justify-center mb-1.5">2</span>
+            <span class="text-[9px] font-bold text-[#6B7F72] uppercase tracking-wider block">Tier 02</span>
+            <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">Product Category</strong>
+          </div>
+
+          <div class="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
+            <span class="w-7 h-7 rounded-full bg-[#111827] text-[#C5A059] text-xs font-bold flex items-center justify-center mb-1.5">3</span>
+            <span class="text-[9px] font-bold text-[#6B7F72] uppercase tracking-wider block">Tier 03</span>
+            <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">Product Item</strong>
+          </div>
+
+          <div class="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
+            <span class="w-7 h-7 rounded-full bg-[#111827] text-[#C5A059] text-xs font-bold flex items-center justify-center mb-1.5">4</span>
+            <span class="text-[9px] font-bold text-[#6B7F72] uppercase tracking-wider block">Tier 04</span>
+            <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">Specifications</strong>
+          </div>
+
+          <div class="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
+            <span class="w-7 h-7 rounded-full bg-[#111827] text-[#C5A059] text-xs font-bold flex items-center justify-center mb-1.5">5</span>
+            <span class="text-[9px] font-bold text-[#6B7F72] uppercase tracking-wider block">Tier 05</span>
+            <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">MOQ Threshold</strong>
+          </div>
+
+          <div class="p-3.5 bg-[#C5A059]/20 rounded-xl border border-[#C5A059] shadow-sm flex flex-col items-center justify-center">
+            <span class="w-7 h-7 rounded-full bg-[#C5A059] text-black text-xs font-bold flex items-center justify-center mb-1.5">6</span>
+            <span class="text-[9px] font-bold text-gray-900 uppercase tracking-wider block">Tier 06</span>
+            <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">Instant RFQ</strong>
+          </div>
         </div>
       </div>
 
@@ -698,34 +750,71 @@
         <button onclick="filterCategory('fmcg')" class="btn-white text-xs whitespace-nowrap">View Swaad FMCG Range</button>
       </div>
 
-      <!-- Filter Tabs -->
+      <!-- Tier 1: Division Filter Tabs -->
       <div class="flex flex-wrap items-center justify-center gap-3 mb-10">
-        <button class="east-tab active" data-filter="all">All Items</button>
-        <button class="east-tab" data-filter="fmcg">F.M.C.G. Wholesale</button>
-        <button class="east-tab" data-filter="construction">Construction Materials</button>
-        <button class="east-tab" data-filter="tea">Tea & Packaging</button>
+        <button class="east-tab active" data-filter="all">All Divisions & Products</button>
+        <button class="east-tab" data-filter="fmcg">Division 01: FMCG Distribution</button>
+        <button class="east-tab" data-filter="construction">Division 02: Construction & Industrial</button>
+        <button class="east-tab" data-filter="tea">Division 03: Assam Tea Packaging</button>
       </div>
 
-      <!-- Product Cards Grid -->
+      <!-- Product Cards Grid (6-Tier Structure on every card) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
         
         <!-- Swaad Product 1: Kewra Water 200ml -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="fmcg">
           <div>
-            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center">
+            <!-- Tier 1 & Visual -->
+            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
               <img src="assets/images/swaad-kewra-water-200ml.jpg" alt="Swaad Kewra Water 200ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider">
-                Authorised CSA Zeppy
+              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
+                Div 01 • FMCG Distribution
+              </span>
+              <span class="absolute top-3 right-3 bg-[#C5A059] text-black px-2 py-0.5 rounded-full text-[9px] font-extrabold uppercase">
+                Authorised CSA
               </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">Swaad Kewra Water (200ml)</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">Premium aromatic Kewra water for culinary, biryani, confectionery & institutional use. Authorised CSA Zeppy Food Products.</p>
+            
+            <div class="p-5 space-y-3">
+              <!-- Tier 2 & 3 -->
+              <div>
+                <span class="text-[10px] font-extrabold text-[#6B7F72] uppercase tracking-wider block">Category: Sauces & Culinary Water</span>
+                <h4 class="product-title text-base font-bold text-gray-900 mt-0.5">Swaad Kewra Water (200ml)</h4>
+              </div>
+
+              <p class="product-desc text-xs text-gray-600 leading-relaxed">
+                Premium aromatic Kewra water crafted for commercial culinary, biryani, sweets & institutional distribution across Northeast India.
+              </p>
+
+              <!-- Tier 4: Detailed B2B Specifications -->
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-[11px] space-y-1.5 text-gray-700">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Net Volume:</span>
+                  <strong class="text-gray-900">200 ml Bottle</strong>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Outer Packaging:</span>
+                  <span class="font-medium text-gray-900">Master Carton (48 Bottles)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Compliance / FSSAI:</span>
+                  <span class="font-semibold text-[#6B7F72]">FSSAI 20326101******98</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Shelf Life / Brand:</span>
+                  <span class="font-medium text-gray-900">24 Mths • Zeppy / Swaad</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 10 Cases</span>
-            <button onclick="addToRFQ('Swaad Kewra Water (200ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4">
+
+          <!-- Tier 5 (MOQ) & Tier 6 (RFQ Trigger) -->
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between bg-white">
+            <div>
+              <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest block">Tier 05 • MOQ</span>
+              <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> 10 Cases</span>
+            </div>
+            <button onclick="addToRFQ('Swaad Kewra Water (200ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4 shadow-sm">
               + Add to RFQ
             </button>
           </div>
@@ -734,20 +823,53 @@
         <!-- Swaad Product 2: Synthetic Vinegar 700ml -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="fmcg">
           <div>
-            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center">
+            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
               <img src="assets/images/swaad-vinegar-700ml.jpg" alt="Swaad Synthetic Vinegar 700ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider">
-                Authorised CSA Zeppy
+              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
+                Div 01 • FMCG Distribution
+              </span>
+              <span class="absolute top-3 right-3 bg-[#C5A059] text-black px-2 py-0.5 rounded-full text-[9px] font-extrabold uppercase">
+                Authorised CSA
               </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">Swaad Synthetic Vinegar (700ml)</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">High grade non-fruit synthetic vinegar for food processing, pickling & hotel/restaurant wholesale supply.</p>
+            
+            <div class="p-5 space-y-3">
+              <div>
+                <span class="text-[10px] font-extrabold text-[#6B7F72] uppercase tracking-wider block">Category: Sauces & Culinary Essentials</span>
+                <h4 class="product-title text-base font-bold text-gray-900 mt-0.5">Swaad Synthetic Vinegar (700ml)</h4>
+              </div>
+
+              <p class="product-desc text-xs text-gray-600 leading-relaxed">
+                High grade non-fruit synthetic vinegar for food processing, pickling, fast food chains & HoReCa wholesale distribution.
+              </p>
+
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-[11px] space-y-1.5 text-gray-700">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Net Volume:</span>
+                  <strong class="text-gray-900">700 ml Economy Bottle</strong>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Outer Packaging:</span>
+                  <span class="font-medium text-gray-900">Master Box (24 Bottles)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Compliance / FSSAI:</span>
+                  <span class="font-semibold text-[#6B7F72]">FSSAI 20326101******98</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Shelf Life / Brand:</span>
+                  <span class="font-medium text-gray-900">24 Mths • Zeppy / Swaad</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 10 Cases</span>
-            <button onclick="addToRFQ('Swaad Synthetic Vinegar (700ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4">
+
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between bg-white">
+            <div>
+              <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest block">Tier 05 • MOQ</span>
+              <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> 10 Cases</span>
+            </div>
+            <button onclick="addToRFQ('Swaad Synthetic Vinegar (700ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4 shadow-sm">
               + Add to RFQ
             </button>
           </div>
@@ -756,20 +878,53 @@
         <!-- Swaad Product 3: Red Chilli Sauce 700ml -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="fmcg">
           <div>
-            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center">
+            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
               <img src="assets/images/swaad-red-chilli-sauce-700ml.jpg" alt="Swaad Red Chilli Sauce 700ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider">
-                Authorised CSA Zeppy
+              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
+                Div 01 • FMCG Distribution
+              </span>
+              <span class="absolute top-3 right-3 bg-[#C5A059] text-black px-2 py-0.5 rounded-full text-[9px] font-extrabold uppercase">
+                Authorised CSA
               </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">Swaad Red Chilli Sauce (700ml)</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">Rich & fiery spicy red chilli sauce crafted for commercial kitchens, HoReCa & retail supermarket distribution.</p>
+            
+            <div class="p-5 space-y-3">
+              <div>
+                <span class="text-[10px] font-extrabold text-[#6B7F72] uppercase tracking-wider block">Category: Sauces & Culinary Essentials</span>
+                <h4 class="product-title text-base font-bold text-gray-900 mt-0.5">Swaad Red Chilli Sauce (700ml)</h4>
+              </div>
+
+              <p class="product-desc text-xs text-gray-600 leading-relaxed">
+                Rich & fiery red chilli sauce formatted for restaurant kitchens, fast food vendors & retail supermarket chains.
+              </p>
+
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-[11px] space-y-1.5 text-gray-700">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Net Volume:</span>
+                  <strong class="text-gray-900">700 ml Commercial Pack</strong>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Outer Packaging:</span>
+                  <span class="font-medium text-gray-900">Master Case (24 Bottles)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Compliance / FSSAI:</span>
+                  <span class="font-semibold text-[#6B7F72]">FSSAI 20326101******98</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Shelf Life / Brand:</span>
+                  <span class="font-medium text-gray-900">18 Mths • Zeppy / Swaad</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 10 Cases</span>
-            <button onclick="addToRFQ('Swaad Red Chilli Sauce (700ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4">
+
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between bg-white">
+            <div>
+              <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest block">Tier 05 • MOQ</span>
+              <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> 10 Cases</span>
+            </div>
+            <button onclick="addToRFQ('Swaad Red Chilli Sauce (700ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4 shadow-sm">
               + Add to RFQ
             </button>
           </div>
@@ -778,20 +933,53 @@
         <!-- Swaad Product 4: Premium Rose Water 700ml -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="fmcg">
           <div>
-            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center">
+            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
               <img src="assets/images/swaad-rose-water-700ml.jpg" alt="Swaad Rose Water 700ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider">
-                Authorised CSA Zeppy
+              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
+                Div 01 • FMCG Distribution
+              </span>
+              <span class="absolute top-3 right-3 bg-[#C5A059] text-black px-2 py-0.5 rounded-full text-[9px] font-extrabold uppercase">
+                Authorised CSA
               </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">Swaad Premium Rose Water (700ml)</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">Pure distilled aromatic Rose Water in 700ml economy glass bottle for confectionery, sweets & beverages.</p>
+            
+            <div class="p-5 space-y-3">
+              <div>
+                <span class="text-[10px] font-extrabold text-[#6B7F72] uppercase tracking-wider block">Category: Sauces & Culinary Water</span>
+                <h4 class="product-title text-base font-bold text-gray-900 mt-0.5">Swaad Premium Rose Water (700ml)</h4>
+              </div>
+
+              <p class="product-desc text-xs text-gray-600 leading-relaxed">
+                Pure distilled aromatic Rose Water in 700ml economy glass bottle for confectionery, traditional Indian sweets & beverages.
+              </p>
+
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-[11px] space-y-1.5 text-gray-700">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Net Volume:</span>
+                  <strong class="text-gray-900">700 ml Economy Bottle</strong>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Outer Packaging:</span>
+                  <span class="font-medium text-gray-900">Master Box (24 Bottles)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Compliance / FSSAI:</span>
+                  <span class="font-semibold text-[#6B7F72]">FSSAI 20326101******98</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Shelf Life / Brand:</span>
+                  <span class="font-medium text-gray-900">24 Mths • Zeppy / Swaad</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 10 Cases</span>
-            <button onclick="addToRFQ('Swaad Rose Water (700ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4">
+
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between bg-white">
+            <div>
+              <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest block">Tier 05 • MOQ</span>
+              <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> 10 Cases</span>
+            </div>
+            <button onclick="addToRFQ('Swaad Rose Water (700ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4 shadow-sm">
               + Add to RFQ
             </button>
           </div>
@@ -800,21 +988,61 @@
         <!-- Swaad Product 5: Pure Rose Water 200ml -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="fmcg">
           <div>
-            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center">
+            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
               <img src="assets/images/swaad-rose-water-200ml.jpg" alt="Swaad Rose Water 200ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider">
+              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
                 Authorised CSA Zeppy
               </span>
+              <span class="absolute top-3 right-3 bg-[#C5A059] text-black px-2 py-0.5 rounded-full text-[9px] font-extrabold uppercase">
+                FSSAI Compliant
+              </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">Swaad Pure Rose Water (200ml)</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">Pure distilled aromatic Rose Water in 200ml handy retail pack. Authorised CSA Zeppy Food Products.</p>
+            
+            <div class="p-5 space-y-3">
+              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
+                <span>FMCG Distribution</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-700 font-semibold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">2</span>
+                <span>Food Ingredients & Confectionery</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-900 font-bold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">3</span>
+                <span>Rose Water</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-xs space-y-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">4</span>
+                  <h4 class="product-title text-gray-900 font-extrabold text-xs">Swaad Pure Rose Water 200ml</h4>
+                </div>
+                <div class="text-[11px] text-gray-600 pl-7 space-y-0.5">
+                  <div>• <strong>Net Volume:</strong> 200ml Retail Pack</div>
+                  <div>• <strong>Master Packaging:</strong> 48 Bottles / Box</div>
+                  <div>• <strong>FSSAI License:</strong> 20326101******98</div>
+                  <div>• <strong>Shelf Life:</strong> 24 Months • Zeppy / Swaad</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 10 Cases</span>
-            <button onclick="addToRFQ('Swaad Rose Water (200ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4">
-              + Add to RFQ
+
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 bg-white space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
+                <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 10 Cases</span>
+              </div>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">In Stock Hub</span>
+            </div>
+
+            <button onclick="addToRFQ('Swaad Pure Rose Water 200ml', 'fmcg', '10 Cases')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
+              <span class="w-5 h-5 rounded-full bg-[#C5A059] text-black text-[9px] flex items-center justify-center font-extrabold mr-1">6</span> Request Quote (+ Add to RFQ)
             </button>
           </div>
         </div>
@@ -822,43 +1050,117 @@
         <!-- Product 6: FMCG Food Grains -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden" data-category="fmcg">
           <div>
-            <div class="h-56 relative overflow-hidden bg-gray-100">
+            <div class="h-56 relative overflow-hidden bg-gray-100 border-b border-gray-100">
               <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80" alt="Assam Food Grains & Pulses" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-gray-900 uppercase tracking-wider">
-                FMCG Supply
+              <span class="absolute top-3 left-3 bg-[#111827] text-white px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider">
+                Div 01 • FMCG Distribution
               </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">Assam Food Grains & Pulses</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">Basmati & non-basmati rice, Toor/Chana/Masoor dal, and refined flour in bulk quintal bags.</p>
+            
+            <div class="p-5 space-y-3">
+              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
+                <span>FMCG Distribution</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-700 font-semibold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">2</span>
+                <span>Staple Food Grains & Pulses</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-900 font-bold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">3</span>
+                <span>Rice, Pulses & Refined Flour</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-xs space-y-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">4</span>
+                  <h4 class="product-title text-gray-900 font-extrabold text-xs">Assam Food Grains & Pulses</h4>
+                </div>
+                <div class="text-[11px] text-gray-600 pl-7 space-y-0.5">
+                  <div>• <strong>Bag Weight:</strong> 25kg / 50kg Quintal Sacks</div>
+                  <div>• <strong>Packaging Type:</strong> Jute / HDPE Woven Bags</div>
+                  <div>• <strong>FSSAI License:</strong> 20326101******98</div>
+                  <div>• <strong>Grade:</strong> AGMARK Certified Premium</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 50 Bags</span>
-            <button onclick="addToRFQ('Assam Food Grains & Pulses', 'fmcg', '50 Bags')" class="btn-black text-xs py-2 px-4">
-              + Add to RFQ
+
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 bg-white space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
+                <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 50 Bags</span>
+              </div>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">Bulk Dispatch</span>
+            </div>
+
+            <button onclick="addToRFQ('Assam Food Grains & Pulses', 'fmcg', '50 Bags')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
+              <span class="w-5 h-5 rounded-full bg-[#C5A059] text-black text-[9px] flex items-center justify-center font-extrabold mr-1">6</span> Request Quote (+ Add to RFQ)
             </button>
           </div>
         </div>
 
-        <!-- Product 7: Spices -->
+        <!-- Product 7: Whole & Ground Spices -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden" data-category="fmcg">
           <div>
-            <div class="h-56 relative overflow-hidden bg-gray-100">
+            <div class="h-56 relative overflow-hidden bg-gray-100 border-b border-gray-100">
               <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80" alt="Wholesale Spices" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-gray-900 uppercase tracking-wider">
-                Pure Spices
+              <span class="absolute top-3 left-3 bg-[#111827] text-white px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider">
+                Div 01 • FMCG Distribution
               </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">Whole & Ground Spices</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">Turmeric, red chili, cumin, coriander, and mixed spices packed for wholesale & retail.</p>
+            
+            <div class="p-5 space-y-3">
+              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
+                <span>FMCG Distribution</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-700 font-semibold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">2</span>
+                <span>Spices & Masala Essentials</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-900 font-bold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">3</span>
+                <span>Turmeric, Chili & Cumin</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-xs space-y-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">4</span>
+                  <h4 class="product-title text-gray-900 font-extrabold text-xs">Whole & Ground Spices</h4>
+                </div>
+                <div class="text-[11px] text-gray-600 pl-7 space-y-0.5">
+                  <div>• <strong>Pouch Sizes:</strong> 100g, 500g & 1kg Packs</div>
+                  <div>• <strong>Outer Packaging:</strong> Corrugated Master Box</div>
+                  <div>• <strong>FSSAI License:</strong> 20326101******98</div>
+                  <div>• <strong>Purity:</strong> 100% Pure Natural • 12 Mths</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 20 Cases</span>
-            <button onclick="addToRFQ('Wholesale Spices', 'fmcg', '20 Cases')" class="btn-black text-xs py-2 px-4">
-              + Add to RFQ
+
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 bg-white space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
+                <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 20 Cases</span>
+              </div>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">In Stock Hub</span>
+            </div>
+
+            <button onclick="addToRFQ('Whole & Ground Spices', 'fmcg', '20 Cases')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
+              <span class="w-5 h-5 rounded-full bg-[#C5A059] text-black text-[9px] flex items-center justify-center font-extrabold mr-1">6</span> Request Quote (+ Add to RFQ)
             </button>
           </div>
         </div>
@@ -866,21 +1168,58 @@
         <!-- Product 8: Construction Machinery Spare Parts -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden" data-category="construction">
           <div>
-            <div class="h-56 relative overflow-hidden bg-gray-100">
+            <div class="h-56 relative overflow-hidden bg-gray-100 border-b border-gray-100">
               <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Construction Machinery Spare Parts" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-gray-900 uppercase tracking-wider">
-                Machinery Spares
+              <span class="absolute top-3 left-3 bg-[#111827] text-white px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider">
+                Div 02 • Construction & Industrial
               </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">Construction Machinery Spare Parts</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">All kinds of JCB, excavator, loader & crane spare parts, hydraulic seals, air/oil filters, and bucket teeth.</p>
+            
+            <div class="p-5 space-y-3">
+              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
+                <span>Construction & Industrial Supply</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-700 font-semibold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">2</span>
+                <span>Heavy Earthmoving Machinery Spares</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-900 font-bold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">3</span>
+                <span>JCB, Excavator & Crane Parts</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-xs space-y-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">4</span>
+                  <h4 class="product-title text-gray-900 font-extrabold text-xs">Construction Machinery Spare Parts</h4>
+                </div>
+                <div class="text-[11px] text-gray-600 pl-7 space-y-0.5">
+                  <div>• <strong>Compatibility:</strong> JCB 3DX/4DX, CAT, Hitachi</div>
+                  <div>• <strong>Material:</strong> Forged Alloy Steel & Seals</div>
+                  <div>• <strong>Standard:</strong> ISO 9001 Certified OEM Grade</div>
+                  <div>• <strong>Dispatch:</strong> Maligaon Guwahati Hub</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-gears text-[#C5A059] mr-1"></i> MOQ: 10 Sets</span>
-            <button onclick="addToRFQ('Construction Machinery Spare Parts', 'construction', '10 Sets')" class="btn-black text-xs py-2 px-4">
-              + Add to RFQ
+
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 bg-white space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
+                <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-gears text-[#C5A059] mr-1"></i> MOQ: 10 Sets</span>
+              </div>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">OEM Certified</span>
+            </div>
+
+            <button onclick="addToRFQ('Construction Machinery Spare Parts', 'construction', '10 Sets')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
+              <span class="w-5 h-5 rounded-full bg-[#C5A059] text-black text-[9px] flex items-center justify-center font-extrabold mr-1">6</span> Request Quote (+ Add to RFQ)
             </button>
           </div>
         </div>
@@ -888,21 +1227,58 @@
         <!-- Product 9: Industrial Lubricants & Oils -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden" data-category="construction">
           <div>
-            <div class="h-56 relative overflow-hidden bg-gray-100">
+            <div class="h-56 relative overflow-hidden bg-gray-100 border-b border-gray-100">
               <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=600&q=80" alt="Industrial Machinery Lubricants & Oils" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-gray-900 uppercase tracking-wider">
-                Industrial Lubricants
+              <span class="absolute top-3 left-3 bg-[#111827] text-white px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider">
+                Div 02 • Construction & Industrial
               </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">Industrial Machinery Lubricants & Oils</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">High-performance hydraulic oils, heavy-duty engine oil, gear lubricants, greases, and fluids in barrels.</p>
+            
+            <div class="p-5 space-y-3">
+              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
+                <span>Construction & Industrial Supply</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-700 font-semibold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">2</span>
+                <span>Industrial Fluids & Heavy Oils</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-900 font-bold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">3</span>
+                <span>Hydraulic Oil & Engine Lubricants</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-xs space-y-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">4</span>
+                  <h4 class="product-title text-gray-900 font-extrabold text-xs">Industrial Machinery Lubricants & Oils</h4>
+                </div>
+                <div class="text-[11px] text-gray-600 pl-7 space-y-0.5">
+                  <div>• <strong>Capacity:</strong> 210 Litre Heavy Steel Barrels</div>
+                  <div>• <strong>Viscosity:</strong> ISO VG 68 / 46 / SAE 15W40</div>
+                  <div>• <strong>Standard:</strong> API CK-4 / DIN 51524 Compliant</div>
+                  <div>• <strong>Use Case:</strong> Plant & Earthmoving Machinery</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-oil-can text-[#C5A059] mr-1"></i> MOQ: 2 Barrels</span>
-            <button onclick="addToRFQ('Industrial Machinery Lubricants & Oils', 'construction', '2 Barrels')" class="btn-black text-xs py-2 px-4">
-              + Add to RFQ
+
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 bg-white space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
+                <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-oil-can text-[#C5A059] mr-1"></i> MOQ: 2 Barrels</span>
+              </div>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">Bulk Drums</span>
+            </div>
+
+            <button onclick="addToRFQ('Industrial Machinery Lubricants & Oils', 'construction', '2 Barrels')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
+              <span class="w-5 h-5 rounded-full bg-[#C5A059] text-black text-[9px] flex items-center justify-center font-extrabold mr-1">6</span> Request Quote (+ Add to RFQ)
             </button>
           </div>
         </div>
@@ -910,21 +1286,58 @@
         <!-- Product 10: TMT Rebars & Building Products -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden" data-category="construction">
           <div>
-            <div class="h-56 relative overflow-hidden bg-gray-100">
+            <div class="h-56 relative overflow-hidden bg-gray-100 border-b border-gray-100">
               <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=600&q=80" alt="TMT Rebars & Cement Supply" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-gray-900 uppercase tracking-wider">
-                Construction Materials
+              <span class="absolute top-3 left-3 bg-[#111827] text-white px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider">
+                Div 02 • Construction & Industrial
               </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">TMT Rebars & Portland Cement</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">Fe-500D/550 TMT rebars, structural steel channels, OPC/PPC Grade 53 cement, and building supplies.</p>
+            
+            <div class="p-5 space-y-3">
+              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
+                <span>Construction & Industrial Supply</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-700 font-semibold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">2</span>
+                <span>Structural Construction Materials</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-900 font-bold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">3</span>
+                <span>TMT Steel & Portland Cement</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-xs space-y-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">4</span>
+                  <h4 class="product-title text-gray-900 font-extrabold text-xs">TMT Rebars & Portland Cement</h4>
+                </div>
+                <div class="text-[11px] text-gray-600 pl-7 space-y-0.5">
+                  <div>• <strong>Steel Grade:</strong> Fe-500D / Fe-550D TMT (8-32mm)</div>
+                  <div>• <strong>Cement Grade:</strong> OPC Grade 53 / PPC</div>
+                  <div>• <strong>BIS Standard:</strong> IS 1786 & IS 12269 BIS</div>
+                  <div>• <strong>Delivery:</strong> Trailer Load Across Northeast</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-cubes text-[#C5A059] mr-1"></i> MOQ: 5 Tonnes</span>
-            <button onclick="addToRFQ('TMT Rebars & Cement', 'construction', '5 MT')" class="btn-black text-xs py-2 px-4">
-              + Add to RFQ
+
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 bg-white space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
+                <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-cubes text-[#C5A059] mr-1"></i> MOQ: 5 Tonnes</span>
+              </div>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">Trailer Logistics</span>
+            </div>
+
+            <button onclick="addToRFQ('TMT Rebars & Cement', 'construction', '5 MT')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
+              <span class="w-5 h-5 rounded-full bg-[#C5A059] text-black text-[9px] flex items-center justify-center font-extrabold mr-1">6</span> Request Quote (+ Add to RFQ)
             </button>
           </div>
         </div>
@@ -932,21 +1345,61 @@
         <!-- Product 11: CD Gold Tea & Packaging -->
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="tea">
           <div>
-            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center">
+            <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
               <img src="assets/images/cd-gold-tea-packaging.jpg" alt="CD Gold Tea Premium Assam Tea Pouch" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
-              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider">
+              <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
+                Div 03 • Assam Tea Packaging
+              </span>
+              <span class="absolute top-3 right-3 bg-[#C5A059] text-black px-2 py-0.5 rounded-full text-[9px] font-extrabold uppercase">
                 CD Gold Tea Brand
               </span>
             </div>
-            <div class="p-5">
-              <h4 class="product-title text-base font-bold text-gray-900 mb-1">CD Gold Tea (250g Zip-Lock Pouch)</h4>
-              <p class="product-desc text-xs text-gray-600 mb-3">100% Pure Assam Tea packaged in premium zip-lock foil pouches. Rich aroma, strong taste & natural goodness. FSSAI & CD Group certified.</p>
+            
+            <div class="p-5 space-y-3">
+              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
+                <span>Assam Tea Label & Packaging</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-700 font-semibold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">2</span>
+                <span>Packaged Assam Teas</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="flex items-center gap-2 text-xs text-gray-900 font-bold">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">3</span>
+                <span>Assam CTC & Orthodox Tea</span>
+              </div>
+              <div class="pl-2 text-gray-300 text-[10px]"><i class="fa-solid fa-arrow-down"></i></div>
+
+              <div class="bg-[#F4F5F0] p-3 rounded-xl border border-gray-200 text-xs space-y-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">4</span>
+                  <h4 class="product-title text-gray-900 font-extrabold text-xs">CD Gold Tea 250g Zip Pouch</h4>
+                </div>
+                <div class="text-[11px] text-gray-600 pl-7 space-y-0.5">
+                  <div>• <strong>Net Weight:</strong> 250g Stand-Up Zip Pouch</div>
+                  <div>• <strong>Packaging:</strong> Triple-Layer Foil Barrier</div>
+                  <div>• <strong>FSSAI License:</strong> 20326101******98</div>
+                  <div>• <strong>Origin:</strong> Direct Assam Garden Sourcing</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
-            <span class="text-[11px] text-gray-600 font-semibold"><i class="fa-solid fa-mug-hot text-[#C5A059] mr-1"></i> MOQ: 50 Pouches</span>
-            <button onclick="addToRFQ('CD Gold Tea (250g Pouch)', 'tea', '50 Pouches')" class="btn-black text-xs py-2 px-4">
-              + Add to RFQ
+
+          <div class="px-5 pb-5 pt-3 border-t border-gray-100 bg-white space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
+                <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-mug-hot text-[#C5A059] mr-1"></i> MOQ: 50 Pouches</span>
+              </div>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">Direct Garden</span>
+            </div>
+
+            <button onclick="addToRFQ('CD Gold Tea (250g Pouch)', 'tea', '50 Pouches')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
+              <span class="w-5 h-5 rounded-full bg-[#C5A059] text-black text-[9px] flex items-center justify-center font-extrabold mr-1">6</span> Request Quote (+ Add to RFQ)
             </button>
           </div>
         </div>
