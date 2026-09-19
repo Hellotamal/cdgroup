@@ -141,26 +141,92 @@
           </div>
         </a>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-700">
-          <a href="#home" class="hover:text-gray-900 transition">Home</a>
-          <a href="#divisions" class="hover:text-gray-900 transition">Divisions</a>
-          <a href="#leadership" class="hover:text-gray-900 transition">Leadership</a>
-          <a href="#catalog" class="hover:text-gray-900 transition">Product Catalog</a>
-          <a href="#why-us" class="hover:text-gray-900 transition">Why CD Group</a>
-          <a href="#journal" class="hover:text-gray-900 transition">Office Gallery</a>
-          <a href="#compliance" class="hover:text-gray-900 transition">Compliance</a>
+        <!-- Desktop Navigation Links (Structured Architecture) -->
+        <nav class="hidden xl:flex items-center gap-5 text-xs font-bold text-gray-800">
+          <a href="#home" class="hover:text-[#C5A059] transition py-2">HOME</a>
+          
+          <!-- ABOUT CD GROUP -->
+          <div class="nav-item-dropdown py-2">
+            <a href="#about-profile" class="hover:text-[#C5A059] transition flex items-center gap-1">
+              ABOUT CD GROUP <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="#about-profile" class="nav-dropdown-link"><i class="fa-solid fa-building"></i> Company Profile</a>
+              <a href="#leadership" class="nav-dropdown-link"><i class="fa-solid fa-user-tie"></i> Our Leadership</a>
+              <a href="#journal" class="nav-dropdown-link"><i class="fa-solid fa-warehouse"></i> Infrastructure</a>
+              <a href="#compliance" class="nav-dropdown-link"><i class="fa-solid fa-shield-halved"></i> Compliance</a>
+              <a href="#network" class="nav-dropdown-link"><i class="fa-solid fa-network-wired"></i> Our Network</a>
+            </div>
+          </div>
+
+          <!-- BUSINESS DIVISIONS -->
+          <div class="nav-item-dropdown py-2">
+            <a href="#divisions" class="hover:text-[#C5A059] transition flex items-center gap-1">
+              BUSINESS DIVISIONS <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="#divisions" onclick="filterCategory('fmcg')" class="nav-dropdown-link"><i class="fa-solid fa-basket-shopping"></i> FMCG Distribution</a>
+              <a href="#divisions" onclick="filterCategory('construction')" class="nav-dropdown-link"><i class="fa-solid fa-screwdriver-wrench"></i> Construction & Industrial Supply</a>
+              <a href="#divisions" onclick="filterCategory('tea')" class="nav-dropdown-link"><i class="fa-solid fa-box-open"></i> Assam Tea Label & Packaging</a>
+            </div>
+          </div>
+
+          <!-- PRODUCTS -->
+          <div class="nav-item-dropdown py-2">
+            <a href="#catalog" class="hover:text-[#C5A059] transition flex items-center gap-1">
+              PRODUCTS <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="#catalog" onclick="filterCategory('fmcg')" class="nav-dropdown-link"><i class="fa-solid fa-bottle-droplet"></i> FMCG Products</a>
+              <a href="#catalog" onclick="filterCategory('construction')" class="nav-dropdown-link"><i class="fa-solid fa-gears"></i> Machinery Spares</a>
+              <a href="#catalog" onclick="filterCategory('construction')" class="nav-dropdown-link"><i class="fa-solid fa-oil-can"></i> Lubricants & Oils</a>
+              <a href="#catalog" onclick="filterCategory('construction')" class="nav-dropdown-link"><i class="fa-solid fa-cubes"></i> Construction Materials</a>
+              <a href="#catalog" onclick="filterCategory('tea')" class="nav-dropdown-link"><i class="fa-solid fa-mug-hot"></i> Assam Tea Packaging Products</a>
+            </div>
+          </div>
+
+          <!-- BRANDS & PARTNERS -->
+          <div class="nav-item-dropdown py-2">
+            <a href="#partners" class="hover:text-[#C5A059] transition flex items-center gap-1">
+              BRANDS & PARTNERS <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="#partners" class="nav-dropdown-link"><i class="fa-solid fa-award"></i> FMCG Brands (Authorised CSA)</a>
+              <a href="#partners" class="nav-dropdown-link"><i class="fa-solid fa-industry"></i> Industrial Brands</a>
+              <a href="#partners" class="nav-dropdown-link"><i class="fa-solid fa-leaf"></i> Tea Partners</a>
+            </div>
+          </div>
+
+          <!-- B2B SOLUTIONS -->
+          <div class="nav-item-dropdown py-2">
+            <a href="#b2b-solutions" class="hover:text-[#C5A059] transition flex items-center gap-1">
+              B2B SOLUTIONS <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="#b2b-solutions" class="nav-dropdown-link"><i class="fa-solid fa-boxes-packing"></i> Wholesale Supply</a>
+              <a href="#b2b-solutions" class="nav-dropdown-link"><i class="fa-solid fa-truck-ramp-box"></i> Super Stockist</a>
+              <a href="#b2b-solutions" class="nav-dropdown-link"><i class="fa-solid fa-route"></i> Distribution</a>
+              <a href="#b2b-solutions" class="nav-dropdown-link"><i class="fa-solid fa-building-columns"></i> Institutional Supply</a>
+              <a href="#b2b-solutions" class="nav-dropdown-link"><i class="fa-solid fa-tags"></i> Private Label</a>
+              <a href="#b2b-solutions" class="nav-dropdown-link"><i class="fa-solid fa-cart-flatbed"></i> Bulk Procurement</a>
+            </div>
+          </div>
+
+          <a href="#clients" class="hover:text-[#C5A059] transition py-2">PROJECTS / CLIENTS</a>
+          <a href="#catalog" class="hover:text-[#C5A059] transition py-2">CATALOGUE</a>
+          <a href="#resources" class="hover:text-[#C5A059] transition py-2">BLOG / RESOURCES</a>
+          <a href="#contact" class="hover:text-[#C5A059] transition py-2">CONTACT</a>
         </nav>
 
         <!-- Header Actions -->
         <div class="flex items-center gap-3">
           <button id="openRFQBtn" class="hidden sm:inline-flex btn-white text-xs py-2 px-4 shadow-sm">
-            <i class="fa-solid fa-basket-shopping text-[#C5A059]"></i> RFQ (<span class="rfq-count font-bold">0</span>)
+            <i class="fa-solid fa-basket-shopping text-[#C5A059]"></i> Quote Basket (<span class="rfq-count font-bold">0</span>)
           </button>
-          <a href="#contact" class="btn-black">Get in touch</a>
+          <a href="#contact" class="btn-black text-xs py-2 px-4">REQUEST A QUOTE</a>
           
           <!-- Mobile Menu Toggle -->
-          <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-full text-gray-700 hover:bg-gray-200">
+          <button id="mobileMenuBtn" class="xl:hidden p-2 rounded-full text-gray-700 hover:bg-gray-200">
             <i class="fa-solid fa-bars text-lg"></i>
           </button>
         </div>
@@ -168,16 +234,59 @@
       </div>
     </div>
 
-    <!-- Mobile Drawer -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 space-y-3">
-      <a href="#home" class="block py-2 text-gray-800 font-medium">Home</a>
-      <a href="#divisions" class="block py-2 text-gray-800 font-medium">Business Divisions</a>
-      <a href="#leadership" class="block py-2 text-gray-800 font-medium">Leadership</a>
-      <a href="#catalog" class="block py-2 text-gray-800 font-medium">Product Catalog</a>
-      <a href="#why-us" class="block py-2 text-gray-800 font-medium">Why CD Group</a>
-      <a href="#journal" class="block py-2 text-gray-800 font-medium">Office Gallery</a>
-      <a href="#compliance" class="block py-2 text-gray-800 font-medium">Government Registrations</a>
-      <a href="#contact" class="btn-black w-full justify-center mt-2">Get in touch</a>
+    <!-- Mobile Drawer (Structured Tree) -->
+    <div id="mobileMenu" class="hidden xl:hidden bg-white border-b border-gray-200 px-5 pt-4 pb-6 space-y-4 max-h-[85vh] overflow-y-auto">
+      <a href="#home" class="block text-sm font-bold text-gray-900 border-b border-gray-100 pb-2">HOME</a>
+      
+      <div class="space-y-1">
+        <span class="text-[10px] font-extrabold uppercase text-[#C5A059] tracking-widest block">ABOUT CD GROUP</span>
+        <a href="#about-profile" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Company Profile</a>
+        <a href="#leadership" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Our Leadership</a>
+        <a href="#journal" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Infrastructure</a>
+        <a href="#compliance" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Compliance</a>
+        <a href="#network" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Our Network</a>
+      </div>
+
+      <div class="space-y-1 border-t border-gray-100 pt-2">
+        <span class="text-[10px] font-extrabold uppercase text-[#C5A059] tracking-widest block">BUSINESS DIVISIONS</span>
+        <a href="#divisions" onclick="filterCategory('fmcg')" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">FMCG Distribution</a>
+        <a href="#divisions" onclick="filterCategory('construction')" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Construction & Industrial Supply</a>
+        <a href="#divisions" onclick="filterCategory('tea')" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Assam Tea Product Label & Packaging</a>
+      </div>
+
+      <div class="space-y-1 border-t border-gray-100 pt-2">
+        <span class="text-[10px] font-extrabold uppercase text-[#C5A059] tracking-widest block">PRODUCTS</span>
+        <a href="#catalog" onclick="filterCategory('fmcg')" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">FMCG Products</a>
+        <a href="#catalog" onclick="filterCategory('construction')" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Machinery Spares</a>
+        <a href="#catalog" onclick="filterCategory('construction')" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Lubricants & Oils</a>
+        <a href="#catalog" onclick="filterCategory('construction')" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Construction Materials</a>
+        <a href="#catalog" onclick="filterCategory('tea')" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Assam Tea Packaging Products</a>
+      </div>
+
+      <div class="space-y-1 border-t border-gray-100 pt-2">
+        <span class="text-[10px] font-extrabold uppercase text-[#C5A059] tracking-widest block">BRANDS & PARTNERS</span>
+        <a href="#partners" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">FMCG Brands (Authorised CSA)</a>
+        <a href="#partners" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Industrial Brands</a>
+        <a href="#partners" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Tea Partners</a>
+      </div>
+
+      <div class="space-y-1 border-t border-gray-100 pt-2">
+        <span class="text-[10px] font-extrabold uppercase text-[#C5A059] tracking-widest block">B2B SOLUTIONS</span>
+        <a href="#b2b-solutions" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Wholesale Supply</a>
+        <a href="#b2b-solutions" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Super Stockist / CSA</a>
+        <a href="#b2b-solutions" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Distribution</a>
+        <a href="#b2b-solutions" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Institutional Supply</a>
+        <a href="#b2b-solutions" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Private Label</a>
+        <a href="#b2b-solutions" class="block pl-3 py-1 text-xs text-gray-700 font-medium hover:text-[#C5A059]">Bulk Procurement</a>
+      </div>
+
+      <div class="pt-2 border-t border-gray-100 space-y-2">
+        <a href="#clients" class="block text-xs font-bold text-gray-900">PROJECTS / CLIENTS</a>
+        <a href="#catalog" class="block text-xs font-bold text-gray-900">PRODUCT CATALOGUE</a>
+        <a href="#resources" class="block text-xs font-bold text-gray-900">BLOG / RESOURCES</a>
+        <a href="#contact" class="block text-xs font-bold text-gray-900">CONTACT</a>
+        <a href="#contact" class="btn-black w-full justify-center mt-2 text-xs">REQUEST A QUOTE</a>
+      </div>
     </div>
   </header>
 
@@ -346,6 +455,42 @@
 
       </div>
 
+    </div>
+  </section>
+
+  <!-- COMPANY PROFILE SECTION (#about-profile) -->
+  <section id="about-profile" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#C5A059] bg-[#C5A059]/10 px-3.5 py-1.5 rounded-full inline-block">
+            About CD Group
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+            Company Profile & Corporate Overview
+          </h2>
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+            Headquartered at Maligaon Gate No-3 near NFR Railway HQ in Guwahati, <strong>CD Group</strong> is a premier multi-sector B2B enterprise operating across <strong>B2B Distribution • Trading • Sourcing • Supply</strong>. We bridge national manufacturers, regional distributors, and commercial trade networks across Assam and all 8 Northeast Indian states.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 bg-[#F4F5F0] rounded-xl border border-gray-200">
+              <i class="fa-solid fa-award text-2xl text-[#C5A059] mb-2 block"></i>
+              <h4 class="font-bold text-gray-900 text-sm">Authorised CSA Partner</h4>
+              <p class="text-xs text-gray-600 mt-1">Carrying & Forwarding Agent / Super Stockist for Zeppy & Swaad Food Products across NE India.</p>
+            </div>
+            <div class="p-4 bg-[#F4F5F0] rounded-xl border border-gray-200">
+              <i class="fa-solid fa-gears text-2xl text-[#C5A059] mb-2 block"></i>
+              <h4 class="font-bold text-gray-900 text-sm">Industrial & Spares Supplier</h4>
+              <p class="text-xs text-gray-600 mt-1">All kinds of JCB & excavator machinery spare parts, hydraulic oils, and construction materials.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-6">
+          <div class="rounded-[24px] overflow-hidden shadow-xl border border-gray-200 bg-gray-100">
+            <img src="assets/images/2.jpeg" alt="CD Group Corporate Signage" class="w-full h-96 object-cover">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -947,6 +1092,329 @@
           </button>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS & PARTNERS SECTION (#partners) -->
+  <section id="partners" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#C5A059] bg-[#C5A059]/10 px-3.5 py-1.5 rounded-full inline-block">
+          Trusted Brand Alliances
+        </span>
+        <h2 class="text-3xl font-extrabold text-gray-900">Brands & Distribution Partners</h2>
+        <p class="text-sm text-gray-600">Partnering with leading FMCG manufacturers, industrial suppliers, and Assam tea estates.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-[#F4F5F0] rounded-2xl border border-gray-200 text-center space-y-3">
+          <div class="w-14 h-14 mx-auto rounded-full bg-white flex items-center justify-center text-[#C5A059] text-2xl shadow-sm">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900">FMCG Brands</h3>
+          <p class="text-xs text-gray-600">Authorised CSA for <strong>Zeppy Food Products & Swaad Food Products</strong> across entire Northeast India.</p>
+        </div>
+
+        <div class="p-6 bg-[#F4F5F0] rounded-2xl border border-gray-200 text-center space-y-3">
+          <div class="w-14 h-14 mx-auto rounded-full bg-white flex items-center justify-center text-[#C5A059] text-2xl shadow-sm">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900">Industrial Brands</h3>
+          <p class="text-xs text-gray-600">Certified machinery spare parts for JCB, excavators, loaders & heavy-duty industrial lubricant manufacturers.</p>
+        </div>
+
+        <div class="p-6 bg-[#F4F5F0] rounded-2xl border border-gray-200 text-center space-y-3">
+          <div class="w-14 h-14 mx-auto rounded-full bg-white flex items-center justify-center text-[#C5A059] text-2xl shadow-sm">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900">Tea Partners</h3>
+          <p class="text-xs text-gray-600">Direct garden-fresh CTC & Orthodox tea sourcing from premier estates of Upper Assam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- B2B SOLUTIONS SECTION (#b2b-solutions) -->
+  <section id="b2b-solutions" class="py-20 bg-[#111827] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#C5A059] bg-white/10 px-3.5 py-1.5 rounded-full inline-block border border-[#C5A059]/30">
+          Tailored Enterprise Capabilities
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Comprehensive B2B Solutions</h2>
+        <p class="text-sm text-gray-400">Driving end-to-end supply chain efficiency across Assam and Northeast India.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 1. Wholesale Supply -->
+        <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-[#C5A059] transition group space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-boxes-packing"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-[#C5A059] transition">Wholesale Supply</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Direct bulk supply of food grains, pulses, spices, edible oils, and fast-moving retail commodities with guaranteed MOQ flexibility.</p>
+        </div>
+
+        <!-- 2. Super Stockist / CSA -->
+        <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-[#C5A059] transition group space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-[#C5A059] transition">Super Stockist & CSA Services</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Official Carrying and Forwarding Agent for FMCG brands (Authorised CSA of Zeppy / Swaad Food Products for entire Northeast India).</p>
+        </div>
+
+        <!-- 3. Distribution -->
+        <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-[#C5A059] transition group space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-route"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-[#C5A059] transition">Regional Distribution</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Robust logistics and dealership fulfillment network covering all 8 states: Assam, Meghalaya, Arunachal, Nagaland, Manipur, Mizoram, Tripura, Sikkim.</p>
+        </div>
+
+        <!-- 4. Institutional Supply -->
+        <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-[#C5A059] transition group space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-[#C5A059] transition">Institutional & Govt Supply</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Trusted B2B contracting for corporate offices, municipal projects, railways, hotel chains, and infrastructure contractors.</p>
+        </div>
+
+        <!-- 5. Private Label -->
+        <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-[#C5A059] transition group space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-[#C5A059] transition">Private Label & Packaging</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Custom pouch packaging, brand labeling, and zip-lock foil pouching for garden-fresh Assam CTC & Orthodox teas (CD Gold Tea).</p>
+        </div>
+
+        <!-- 6. Bulk Procurement -->
+        <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-[#C5A059] transition group space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-cart-flatbed"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-[#C5A059] transition">Bulk Procurement</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Streamlined sourcing for heavy construction machinery spares (JCB, Excavator, Crane), industrial lubricants, and building rebar/cement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR NETWORK SECTION (#network) -->
+  <section id="network" class="py-16 bg-[#EAECE6]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#C5A059] bg-white px-3.5 py-1.5 rounded-full inline-block mb-2 border border-gray-200">
+          Regional Reach
+        </span>
+        <h2 class="text-3xl font-extrabold text-gray-900">Our Northeast Distribution Network</h2>
+        <p class="text-sm text-gray-600">Guwahati central dispatch connecting all 8 states seamlessly.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+        <div class="p-5 bg-white rounded-2xl border border-gray-200"><h4 class="font-extrabold text-gray-900 text-base">Assam</h4><p class="text-[11px] text-gray-500">Central Hub & State Distribution</p></div>
+        <div class="p-5 bg-white rounded-2xl border border-gray-200"><h4 class="font-extrabold text-gray-900 text-base">Meghalaya</h4><p class="text-[11px] text-gray-500">Shillong & Regional Supply</p></div>
+        <div class="p-5 bg-white rounded-2xl border border-gray-200"><h4 class="font-extrabold text-gray-900 text-base">Arunachal Pradesh</h4><p class="text-[11px] text-gray-500">Itanagar & Project Logistics</p></div>
+        <div class="p-5 bg-white rounded-2xl border border-gray-200"><h4 class="font-extrabold text-gray-900 text-base">Nagaland</h4><p class="text-[11px] text-gray-500">Dimapur & Kohima Network</p></div>
+        <div class="p-5 bg-white rounded-2xl border border-gray-200"><h4 class="font-extrabold text-gray-900 text-base">Manipur</h4><p class="text-[11px] text-gray-500">Imphal Wholesale Supply</p></div>
+        <div class="p-5 bg-white rounded-2xl border border-gray-200"><h4 class="font-extrabold text-gray-900 text-base">Mizoram</h4><p class="text-[11px] text-gray-500">Aizawl Retail Distribution</p></div>
+        <div class="p-5 bg-white rounded-2xl border border-gray-200"><h4 class="font-extrabold text-gray-900 text-base">Tripura</h4><p class="text-[11px] text-gray-500">Agartala Trade Network</p></div>
+        <div class="p-5 bg-white rounded-2xl border border-gray-200"><h4 class="font-extrabold text-gray-900 text-base">Sikkim</h4><p class="text-[11px] text-gray-500">Gangtok Supply Chain</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / CLIENTS SECTION (#clients) -->
+  <section id="clients" class="py-16 bg-white border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">Projects & Corporate Clients</h2>
+        <p class="text-xs sm:text-sm text-gray-600 mt-1">Maintaining long-term relationships with government administrative entities, corporate houses, and wholesale stockists across Assam.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="p-6 bg-[#F4F5F0] rounded-2xl border border-gray-200 space-y-2">
+          <div class="text-2xl font-extrabold text-gray-900">Corporate Networks</div>
+          <p class="text-xs text-gray-600">Supplying major retail supermarket chains & corporate distributors.</p>
+        </div>
+        <div class="p-6 bg-[#F4F5F0] rounded-2xl border border-gray-200 space-y-2">
+          <div class="text-2xl font-extrabold text-gray-900">Govt & Railway Ties</div>
+          <p class="text-xs text-gray-600">Near NFR Railway HQ, supplying infrastructure and administrative vendors.</p>
+        </div>
+        <div class="p-6 bg-[#F4F5F0] rounded-2xl border border-gray-200 space-y-2">
+          <div class="text-2xl font-extrabold text-gray-900">HoReCa & Industry</div>
+          <p class="text-xs text-gray-600">Bulk food & machinery spares supply to hotel chains, contractors & tea gardens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG / RESOURCES SECTION (#resources) -->
+  <section id="resources" class="py-16 bg-[#F4F5F0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">Resources & Business Insights</h2>
+          <p class="text-xs sm:text-sm text-gray-600">Latest updates on B2B supply chain, FMCG distribution & Assam tea trade.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="east-card p-6 bg-white space-y-3">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-[#C5A059] bg-[#C5A059]/10 px-2.5 py-1 rounded-full">FMCG Insights</span>
+          <h4 class="font-bold text-gray-900 text-base">Super Stockist & CSA Distribution Guide for Northeast India</h4>
+          <p class="text-xs text-gray-600 leading-relaxed">Understanding how carrying & forwarding agent networks drive fast retail fulfillment across 8 states from Guwahati.</p>
+        </article>
+
+        <article class="east-card p-6 bg-white space-y-3">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-[#C5A059] bg-[#C5A059]/10 px-2.5 py-1 rounded-full">Machinery Maintenance</span>
+          <h4 class="font-bold text-gray-900 text-base">Selecting High-Grade Hydraulic Oils & JCB Machinery Spares</h4>
+          <p class="text-xs text-gray-600 leading-relaxed">Key maintenance criteria for heavy excavator bucket teeth, hydraulic seals, and high-viscosity engine lubricants.</p>
+        </article>
+
+        <article class="east-card p-6 bg-white space-y-3">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-[#C5A059] bg-[#C5A059]/10 px-2.5 py-1 rounded-full">Tea Trade</span>
+          <h4 class="font-bold text-gray-900 text-base">Custom Zip-Lock Foil Pouch Packaging for Premium Assam Tea</h4>
+          <p class="text-xs text-gray-600 leading-relaxed">How stand-up pouch packaging preserves garden freshness, rich aroma, and strong taste in Assam CTC tea trade.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- B2B RFQ FORM & LOCATION (#contact) -->
+  <section id="contact" class="py-20 bg-[#EAECE6]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: RFQ Form -->
+        <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-[24px] shadow-sm border border-gray-200" id="rfq-form">
+          <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900">Request A Quote</h2>
+            <p class="text-xs sm:text-sm text-gray-600 mt-1">Fill out the form below to receive official wholesale rates & distribution proposals for Northeast India.</p>
+          </div>
+
+          <form id="rfqSubmitForm" class="space-y-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Full Name *</label>
+                <input type="text" name="client_name" required placeholder="e.g. Rahul Sharma" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Company / Firm Name</label>
+                <input type="text" name="company_name" placeholder="e.g. Sharma Traders" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Mobile Phone / WhatsApp *</label>
+                <input type="tel" name="phone" required placeholder="+91 98765 43210" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Target Delivery State *</label>
+                <select name="state" required class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+                  <option value="Assam">Assam</option>
+                  <option value="Meghalaya">Meghalaya</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Nagaland">Nagaland</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Tripura">Tripura</option>
+                  <option value="Sikkim">Sikkim</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 mb-1">Product Requirements & Quantities</label>
+              <textarea name="message" rows="4" placeholder="Specify requirements (e.g. 50 Cases Swaad Sauces, 10 MT TMT Bars, 50 Pouches CD Gold Tea)..." class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900"></textarea>
+            </div>
+
+            <button type="submit" class="btn-black w-full justify-center py-3.5">
+              Submit Quotation Request
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Address & Map Card -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <div class="bg-white p-8 rounded-[24px] border border-gray-200 space-y-6">
+            <h3 class="text-xl font-bold text-gray-900">Corporate Office Address</h3>
+            
+            <div class="space-y-4 text-xs text-gray-700">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-[#C5A059] mt-0.5 text-base"></i>
+                <div>
+                  <strong class="text-gray-900 block text-sm">CD GROUP</strong>
+                  Maligaon Gate No-3, NFR Railway HQ,<br>
+                  Near HDFC Bank, Maligaon,<br>
+                  Guwahati, Kamrup Metropolitan, Assam - 781011
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-[#C5A059] text-sm"></i>
+                <div><strong class="text-gray-900">Phone:</strong> <a href="tel:+913614553088" class="hover:text-[#C5A059] transition">+91 361 4553088</a> (Office Landline)</div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-[#C5A059] text-sm"></i>
+                <div><strong class="text-gray-900">Email:</strong> cdgroupofficial@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-gray-100">
+              <span class="text-[11px] text-gray-500 block mb-2 font-medium">Exact Coordinates: 26.159940, 91.703805</span>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=26.15994035834401,91.70380551749498" target="_blank" rel="noopener" class="btn-black text-xs w-full justify-center">
+                <i class="fa-solid fa-diamond-turn-right"></i> Get Directions on Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Map iframe -->
+          <div class="rounded-[24px] overflow-hidden border border-gray-200 h-64 bg-white">
+            <iframe 
+              title="CD Group Location Map Guwahati"
+              src="https://maps.google.com/maps?q=26.15994035834401,91.70380551749498&z=17&output=embed" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#111827] text-white py-12 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-gray-800">
+        <div>
+          <span class="text-xl font-extrabold tracking-tight text-white block">CD GROUP</span>
+          <p class="text-gray-400 text-xs mt-1">B2B Distribution • Trading • Sourcing • Supply | Serving Assam & Northeast India</p>
+        </div>
+        <div class="flex items-center gap-6 text-gray-300 font-semibold flex-wrap">
+          <a href="#about-profile" class="hover:text-white transition">About Us</a>
+          <a href="#divisions" class="hover:text-white transition">Divisions</a>
+          <a href="#catalog" class="hover:text-white transition">Products</a>
+          <a href="#b2b-solutions" class="hover:text-white transition">Solutions</a>
+          <a href="#compliance" class="hover:text-white transition">Compliance</a>
+          <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
       </div>
 
       <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-500">
