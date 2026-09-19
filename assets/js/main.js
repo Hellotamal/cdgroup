@@ -238,6 +238,26 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       `;
+    } else if (certType === 'fssai') {
+      certTitle.textContent = 'FSSAI Food Safety Registration';
+      certContent.innerHTML = `
+        <div class="space-y-4 text-left">
+          <div class="p-4 bg-[#F4F5F0] rounded-xl border border-gray-200">
+            <h4 class="text-gray-900 font-bold text-base mb-2">FSSAI Registration No: 20326101******98</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-gray-700">
+              <div><strong class="text-gray-900">FBO Name:</strong> C D Group</div>
+              <div><strong class="text-gray-900">Authority:</strong> Govt of Assam • Commissionerate of Food Safety</div>
+              <div><strong class="text-gray-900">Act:</strong> Food Safety & Standards Act, 2006</div>
+              <div><strong class="text-gray-900">Fee Paid Upto:</strong> 18-07-2030</div>
+              <div class="col-span-2"><strong class="text-gray-900">Kind of Business:</strong> General Manufacturing, Wholesaler, Retailer, Repacker, Distributor</div>
+              <div class="col-span-2"><strong class="text-gray-900">Premises:</strong> House No-190, Hillside Colony, Maligaon Gate No-1, Guwahati, Kamrup Metro, Assam - 781011</div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="assets/images/FSSAI.pdf" target="_blank" class="btn-black text-xs"><i class="fa-solid fa-file-pdf mr-1"></i> View Official FSSAI Registration PDF</a>
+          </div>
+        </div>
+      `;
     }
     certModal.classList.add('active');
   };
