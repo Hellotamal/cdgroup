@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <div><strong class="text-gray-900">FBO Name:</strong> C D Group</div>
               <div><strong class="text-gray-900">Authority:</strong> Govt of Assam • Commissionerate of Food Safety</div>
               <div><strong class="text-gray-900">Act:</strong> Food Safety & Standards Act, 2006</div>
-              <div><strong class="text-gray-900">Fee Paid Upto:</strong> 18-07-2030</div>
+              <div><strong class="text-gray-900">Validity Upto:</strong> 18 July 2030</div>
               <div class="col-span-2"><strong class="text-gray-900">Kind of Business:</strong> General Manufacturing, Wholesaler, Retailer, Repacker, Distributor</div>
               <div class="col-span-2"><strong class="text-gray-900">Premises:</strong> House No-190, Hillside Colony, Maligaon Gate No-1, Guwahati, Kamrup Metro, Assam - 781011</div>
             </div>
@@ -318,6 +318,54 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="text-center">
             <a href="assets/images/FSSAI.pdf" target="_blank" class="btn-black text-xs"><i class="fa-solid fa-file-pdf mr-1"></i> View Official FSSAI Registration PDF</a>
           </div>
+        </div>
+      `;
+    } else if (certType === 'other') {
+      certTitle.textContent = 'Other Applicable Registrations';
+      certContent.innerHTML = `
+        <div class="space-y-4 text-left">
+          <div class="p-4 bg-[#F4F5F0] rounded-xl border border-gray-200">
+            <h4 class="text-gray-900 font-bold text-base mb-2">Statutory Trade & Municipal Filings</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-gray-700">
+              <div><strong class="text-gray-900">Establishment:</strong> Shops & Commercial Establishments Act</div>
+              <div><strong class="text-gray-900">Logistics Clearances:</strong> Interstate Transport & Waybill Compliances</div>
+              <div><strong>Local Permits:</strong> GMC Trade Permit & Local Authority Approvals</div>
+              <div><strong>Status:</strong> Active & Maintained</div>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 text-center">Copies available for corporate vendor onboarding upon request.</p>
+        </div>
+      `;
+    } else if (certType === 'authorisation') {
+      certTitle.textContent = 'Authorisation Certificates';
+      certContent.innerHTML = `
+        <div class="space-y-4 text-left">
+          <div class="p-4 bg-[#F4F5F0] rounded-xl border border-gray-200">
+            <h4 class="text-gray-900 font-bold text-base mb-2">CSA & Stockist Distribution Clearances</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-gray-700">
+              <div><strong class="text-gray-900">Operating Role:</strong> Carrying & Forwarding Agent (CSA) / Super Stockist</div>
+              <div><strong class="text-gray-900">Coverage:</strong> All 8 Northeast States</div>
+              <div><strong>Handling Standards:</strong> Food-Grade Hygenic & Warehousing Compliance</div>
+              <div><strong>Status:</strong> Active Operational Authorisations</div>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 text-center">Verified by manufacturer principals and statutory auditors.</p>
+        </div>
+      `;
+    } else if (certType === 'appointment') {
+      certTitle.textContent = 'Brand Appointment Letters';
+      certContent.innerHTML = `
+        <div class="space-y-4 text-left">
+          <div class="p-4 bg-[#F4F5F0] rounded-xl border border-gray-200">
+            <h4 class="text-gray-900 font-bold text-base mb-2">Corporate Principal Representations</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-gray-700">
+              <div><strong class="text-gray-900">FMCG Brands:</strong> Zeppy Food Products & Swaad Culinary Range</div>
+              <div><strong class="text-gray-900">Tea Sourcing:</strong> Direct Assam Tea Estate Auction Contracts</div>
+              <div><strong>Industrial Supply:</strong> Earthmoving Spares & Lubricant Distribution</div>
+              <div><strong>Representation:</strong> Regional Carrying Agent & Authorized Super Stockist</div>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 text-center">Official appointment letters on file with corporate principals.</p>
         </div>
       `;
     }
