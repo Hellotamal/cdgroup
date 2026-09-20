@@ -50,13 +50,13 @@
     }
   </script>
 
-  <!-- Google Fonts & FontAwesome Icons -->
+    <!-- Google Fonts & FontAwesome Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Custom CSS (FMCG B2B Single Page UI) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript></noscript>
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Multi-Schema JSON-LD Graph for Google Search & Local SEO -->
@@ -195,7 +195,7 @@
         <!-- Brand Logo -->
         <a href="#home" class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-full p-0.5 bg-gradient-to-r from-[#C5A059] to-[#D4AF37] shadow-sm">
-            <img src="assets/images/logo.png" alt="CD Group Logo" class="w-full h-full object-cover rounded-full">
+            <img src="assets/images/logo.png" alt="CD Group Logo" width="40" height="40" loading="eager" fetchpriority="high" decoding="async" class="w-full h-full object-cover rounded-full">
           </div>
           <div>
             <span class="text-xl font-extrabold tracking-tight text-white leading-none block">CD GROUP</span>
@@ -210,7 +210,7 @@
           <!-- ABOUT US -->
           <div class="nav-item-dropdown py-2">
             <a href="#about-profile" class="hover:text-[#C5A059] transition flex items-center gap-1 whitespace-nowrap">
-              ABOUT US <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+              ABOUT US <i class="fa-solid fa-chevron-down text-[9px] text-gray-300"></i>
             </a>
             <div class="nav-dropdown-menu">
               <a href="#about-profile" class="nav-dropdown-link"><i class="fa-solid fa-building"></i> Company Profile</a>
@@ -224,7 +224,7 @@
           <!-- DIVISIONS -->
           <div class="nav-item-dropdown py-2">
             <a href="#divisions" class="hover:text-[#C5A059] transition flex items-center gap-1 whitespace-nowrap">
-              DIVISIONS <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+              DIVISIONS <i class="fa-solid fa-chevron-down text-[9px] text-gray-300"></i>
             </a>
             <div class="nav-dropdown-menu">
               <a href="#divisions" onclick="filterCategory('fmcg')" class="nav-dropdown-link"><i class="fa-solid fa-basket-shopping"></i> FMCG Wholesale Distribution</a>
@@ -236,7 +236,7 @@
           <!-- PRODUCTS -->
           <div class="nav-item-dropdown py-2">
             <a href="#catalog" class="hover:text-[#C5A059] transition flex items-center gap-1 whitespace-nowrap">
-              PRODUCTS <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+              PRODUCTS <i class="fa-solid fa-chevron-down text-[9px] text-gray-300"></i>
             </a>
             <div class="nav-dropdown-menu">
               <a href="#catalog" onclick="filterCategory('fmcg')" class="nav-dropdown-link"><i class="fa-solid fa-bottle-droplet"></i> FMCG Products (Authorised CSA)</a>
@@ -250,7 +250,7 @@
           <!-- B2B SOLUTIONS -->
           <div class="nav-item-dropdown py-2">
             <a href="#b2b-solutions" class="hover:text-[#C5A059] transition flex items-center gap-1 whitespace-nowrap">
-              B2B SOLUTIONS <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+              B2B SOLUTIONS <i class="fa-solid fa-chevron-down text-[9px] text-gray-300"></i>
             </a>
             <div class="nav-dropdown-menu">
               <a href="#b2b-solutions" class="nav-dropdown-link"><i class="fa-solid fa-boxes-packing"></i> Wholesale Supply</a>
@@ -265,7 +265,7 @@
           <!-- REGIONAL LOCATIONS -->
           <div class="nav-item-dropdown py-2">
             <a href="#regional-seo" class="hover:text-[#C5A059] transition flex items-center gap-1 whitespace-nowrap">
-              LOCATIONS <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+              LOCATIONS <i class="fa-solid fa-chevron-down text-[9px] text-gray-300"></i>
             </a>
             <div class="nav-dropdown-menu">
               <a href="assam/" class="nav-dropdown-link"><i class="fa-solid fa-map-pin"></i> Assam Statewide</a>
@@ -282,7 +282,7 @@
           <!-- MORE SECTIONS -->
           <div class="nav-item-dropdown py-2">
             <a href="#partners" class="hover:text-[#C5A059] transition flex items-center gap-1 whitespace-nowrap">
-              MORE <i class="fa-solid fa-chevron-down text-[9px] text-gray-400"></i>
+              MORE <i class="fa-solid fa-chevron-down text-[9px] text-gray-300"></i>
             </a>
             <div class="nav-dropdown-menu">
               <a href="brands-and-authorisations/" class="nav-dropdown-link"><i class="fa-solid fa-certificate text-[#C5A059]"></i> Brands & Authorisations</a>
@@ -297,7 +297,7 @@
         <!-- Header Actions -->
         <div class="flex items-center gap-2 sm:gap-3">
           <!-- Day / Night Theme Toggle Button -->
-          <button id="themeToggleBtn" aria-label="Toggle Day or Night Mode" class="p-2 rounded-full border border-gray-300 hover:bg-gray-200 transition flex items-center justify-center w-9 h-9 shadow-sm" title="Toggle Day/Night Mode">
+          <button id="themeToggleBtn" aria-label="Toggle Dark or Light Theme" aria-label="Toggle Day or Night Mode" class="p-2 rounded-full border border-gray-300 hover:bg-gray-200 transition flex items-center justify-center w-9 h-9 shadow-sm" title="Toggle Day/Night Mode">
             <i id="themeIcon" class="fa-solid fa-moon text-gray-700 text-sm"></i>
           </button>
 
@@ -307,7 +307,7 @@
           <a href="#contact" class="btn-black text-xs py-2 px-4 whitespace-nowrap">REQUEST A QUOTE</a>
           
           <!-- Mobile Menu Toggle -->
-          <button id="mobileMenuBtn" class="xl:hidden p-2 rounded-full text-gray-700 hover:bg-gray-200">
+          <button id="mobileMenuBtn" aria-label="Toggle Mobile Navigation Menu" class="xl:hidden p-2 rounded-full text-gray-700 hover:bg-gray-200">
             <i class="fa-solid fa-bars text-lg"></i>
           </button>
         </div>
@@ -432,7 +432,7 @@
 
         <!-- Right Hero Visual Showcase Frame -->
         <div class="lg:col-span-6 rounded-[24px] overflow-hidden relative min-h-[380px] lg:min-h-full bg-gray-200 shadow-sm">
-          <img src="assets/images/2.jpeg" alt="CD Group Wall Display Logo" class="w-full h-full object-cover">
+          <img src="assets/images/2.jpeg" alt="CD Group Wall Display Logo" width="600" height="400" loading="eager" fetchpriority="high" decoding="async" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex items-end p-8">
             <div class="text-white space-y-2">
               <span class="inline-block px-3 py-1 bg-[#C5A059] text-black text-[10px] font-extrabold uppercase rounded-full tracking-wider">
@@ -458,7 +458,7 @@
           B2B Distribution • Trading • Sourcing • Supply
         </span>
         <h2 class="text-3xl font-extrabold text-gray-900">Serving Assam and Northeast India</h2>
-        <p class="text-sm font-semibold text-[#6B7F72] mt-2 uppercase tracking-wide">FMCG &nbsp;|&nbsp; Construction & Industrial Supply &nbsp;|&nbsp; Assam Tea</p>
+        <p class="text-sm font-semibold text-[#4B6354] mt-2 uppercase tracking-wide">FMCG &nbsp;|&nbsp; Construction & Industrial Supply &nbsp;|&nbsp; Assam Tea</p>
       </div>
 
       <!-- 3 Vertical Cards Grid -->
@@ -467,15 +467,15 @@
         <!-- Vertical 1: FMCG -->
         <div class="east-card group">
           <div class="east-img-frame h-72 relative">
-            <img src="assets/images/1.jpeg" alt="FMCG Wholesale Division" class="w-full h-full object-cover">
+            <img src="assets/images/1.jpeg" alt="FMCG Wholesale Division" width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover">
             <span class="absolute top-4 left-4 bg-[#C5A059] px-3 py-1 rounded-full text-[10px] font-bold text-black uppercase shadow-sm">
               Authorized Stockist
             </span>
           </div>
           <div class="p-6 space-y-3">
             <span class="text-[11px] font-bold uppercase tracking-widest text-[#C5A059]">Division 01</span>
-            <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#6B7F72] transition">F.M.C.G. Distributors</h3>
-            <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-[#C5A059]/15 text-[#6B7F72] font-bold text-[11px] rounded-full">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#4B6354] transition">F.M.C.G. Distributors</h3>
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-[#C5A059]/15 text-[#4B6354] font-bold text-[11px] rounded-full">
               <i class="fa-solid fa-award text-[#C5A059]"></i> Stockist - Zeppy & Swaad Food Products
             </div>
             <p class="text-xs text-gray-600 leading-relaxed">
@@ -492,14 +492,14 @@
         <!-- Vertical 2: Construction -->
         <div class="east-card group">
           <div class="east-img-frame h-72 relative">
-            <img src="assets/images/3.jpeg" alt="Construction Machinery Spares & Supplies" class="w-full h-full object-cover">
+            <img src="assets/images/3.jpeg" alt="Construction Machinery Spares & Supplies" width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover">
             <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-gray-900 uppercase">
               Machinery Spares & Lubricants
             </span>
           </div>
           <div class="p-6 space-y-3">
             <span class="text-[11px] font-bold uppercase tracking-widest text-[#C5A059]">Division 02</span>
-            <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#6B7F72] transition">Construction & Supply</h3>
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#4B6354] transition">Construction & Supply</h3>
             <p class="text-xs text-gray-600 leading-relaxed">
               All kinds of construction machinery spare parts (JCB, Excavator, Crane spares, hydraulic seals & filters), heavy industrial lubricants & oils, and structural construction products.
             </p>
@@ -514,14 +514,14 @@
         <!-- Vertical 3: Tea Packaging -->
         <div class="east-card group">
           <div class="east-img-frame h-72 relative bg-white flex items-center justify-center p-2">
-            <img src="assets/images/cd-gold-tea-packaging.jpg" alt="CD Gold Tea Premium Assam Pouch Packaging" class="w-full h-full object-contain">
+            <img src="assets/images/cd-gold-tea-packaging.jpg" alt="CD Gold Tea Premium Assam Pouch Packaging" width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-contain">
             <span class="absolute top-4 left-4 bg-[#C5A059] px-3 py-1 rounded-full text-[10px] font-bold text-black uppercase shadow-sm">
               CD Gold Tea Brand
             </span>
           </div>
           <div class="p-6 space-y-3">
             <span class="text-[11px] font-bold uppercase tracking-widest text-[#C5A059]">Division 03</span>
-            <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#6B7F72] transition">Tea Packaging & Distribution</h3>
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#4B6354] transition">Tea Packaging & Distribution</h3>
             <p class="text-xs text-gray-600 leading-relaxed">
               Garden-fresh Assam CTC & Orthodox tea sourcing, custom zip-lock pouch packaging (CD Gold Tea), bulk tea cup distribution, and regional brand marketing.
             </p>
@@ -567,7 +567,7 @@
         </div>
         <div class="lg:col-span-6">
           <div class="rounded-[24px] overflow-hidden shadow-xl border border-gray-200 bg-gray-100">
-            <img src="assets/images/2.jpeg" alt="CD Group Corporate Signage" class="w-full h-96 object-cover">
+            <img loading="lazy" decoding="async" width="600" height="400" src="assets/images/2.jpeg" alt="CD Group Corporate Signage" class="w-full h-96 object-cover">
           </div>
         </div>
       </div>
@@ -583,7 +583,7 @@
         <div class="lg:col-span-5 relative">
           <!-- Primary Portrait Card -->
           <div class="rounded-[24px] overflow-hidden shadow-xl border border-gray-200 bg-[#F4F5F0]">
-            <img src="assets/images/mrs-chandra-das.png" alt="Mrs. Chandra Das - Founder & Managing Proprietor CD Group" class="w-full h-96 object-cover object-top hover:scale-105 transition duration-500">
+            <img src="assets/images/mrs-chandra-das.png" alt="Mrs. Chandra Das - Founder & Managing Proprietor CD Group" width="500" height="600" loading="lazy" decoding="async" class="w-full h-96 object-cover object-top hover:scale-105 transition duration-500">
             <div class="p-3 text-center bg-white border-t border-gray-100">
               <span class="text-xs font-extrabold text-gray-900 block">Founder & Managing Proprietor</span>
               <span class="text-[10px] text-[#C5A059] font-bold uppercase tracking-wider block">CD Group Leadership</span>
@@ -602,7 +602,7 @@
             <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
               Mrs. Chandra Das
             </h2>
-            <p class="text-sm font-semibold text-[#6B7F72]">
+            <p class="text-sm font-semibold text-[#4B6354]">
               Business Owner & Proprietor • CD Group
             </p>
           </div>
@@ -711,7 +711,7 @@
         Minimalist, Intentional B2B Operations Across Assam & Northeast India
       </h2>
 
-      <p class="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto font-medium">
+      <p class="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto font-medium">
         BUILDING TRUST • DRIVING GROWTH • TOGETHER WE GROW
       </p>
 
@@ -736,7 +736,7 @@
       </div>
 
       <div class="rounded-[24px] overflow-hidden border-2 border-[#C5A059]/40 shadow-2xl bg-[#07111E]">
-        <img src="assets/images/cd-group-product-banner.jpg" alt="CD Group Products Banner - Construction Spares, FMCG Wholesale, Assam Tea Packaging" class="w-full h-auto object-cover hover:scale-[1.01] transition duration-700">
+        <img src="assets/images/cd-group-product-banner.jpg" alt="CD Group Products Banner - Construction Spares, FMCG Wholesale, Assam Tea Packaging" width="1200" height="675" loading="lazy" decoding="async" class="w-full h-auto object-cover hover:scale-[1.01] transition duration-700">
       </div>
     </div>
   </section>
@@ -756,8 +756,8 @@
 
         <!-- Search Bar -->
         <div class="w-full md:w-80 relative">
-          <input type="text" id="productSearch" placeholder="Search products, specs, categories..." class="w-full bg-white border border-gray-300 rounded-full py-2.5 px-4 pl-10 text-xs text-gray-800 placeholder-gray-400 focus:outline-none focus:border-gray-900 transition">
-          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-gray-400 text-xs"></i>
+          <input type="text" id="productSearch" aria-label="Search wholesale product catalog" placeholder="Search products, specs, categories..." class="w-full bg-white border border-gray-300 rounded-full py-2.5 px-4 pl-10 text-xs text-gray-800 placeholder-gray-400 focus:outline-none focus:border-gray-900 transition">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-gray-300 text-xs"></i>
         </div>
       </div>
 
@@ -774,31 +774,31 @@
         <div class="grid grid-cols-2 md:grid-cols-6 gap-3 text-center">
           <div class="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
             <span class="w-7 h-7 rounded-full bg-[#111827] text-[#C5A059] text-xs font-bold flex items-center justify-center mb-1.5">1</span>
-            <span class="text-[9px] font-bold text-[#6B7F72] uppercase tracking-wider block">Tier 01</span>
+            <span class="text-[9px] font-bold text-[#4B6354] uppercase tracking-wider block">Tier 01</span>
             <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">Business Division</strong>
           </div>
 
           <div class="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
             <span class="w-7 h-7 rounded-full bg-[#111827] text-[#C5A059] text-xs font-bold flex items-center justify-center mb-1.5">2</span>
-            <span class="text-[9px] font-bold text-[#6B7F72] uppercase tracking-wider block">Tier 02</span>
+            <span class="text-[9px] font-bold text-[#4B6354] uppercase tracking-wider block">Tier 02</span>
             <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">Product Category</strong>
           </div>
 
           <div class="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
             <span class="w-7 h-7 rounded-full bg-[#111827] text-[#C5A059] text-xs font-bold flex items-center justify-center mb-1.5">3</span>
-            <span class="text-[9px] font-bold text-[#6B7F72] uppercase tracking-wider block">Tier 03</span>
+            <span class="text-[9px] font-bold text-[#4B6354] uppercase tracking-wider block">Tier 03</span>
             <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">Product Item</strong>
           </div>
 
           <div class="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
             <span class="w-7 h-7 rounded-full bg-[#111827] text-[#C5A059] text-xs font-bold flex items-center justify-center mb-1.5">4</span>
-            <span class="text-[9px] font-bold text-[#6B7F72] uppercase tracking-wider block">Tier 04</span>
+            <span class="text-[9px] font-bold text-[#4B6354] uppercase tracking-wider block">Tier 04</span>
             <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">Specifications</strong>
           </div>
 
           <div class="p-3.5 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
             <span class="w-7 h-7 rounded-full bg-[#111827] text-[#C5A059] text-xs font-bold flex items-center justify-center mb-1.5">5</span>
-            <span class="text-[9px] font-bold text-[#6B7F72] uppercase tracking-wider block">Tier 05</span>
+            <span class="text-[9px] font-bold text-[#4B6354] uppercase tracking-wider block">Tier 05</span>
             <strong class="text-xs font-extrabold text-gray-900 block mt-0.5">MOQ Threshold</strong>
           </div>
 
@@ -844,7 +844,7 @@
           <div>
             <!-- Tier 1 & Visual -->
             <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
-              <img src="assets/images/swaad-kewra-water-200ml.jpg" alt="Swaad Kewra Water 200ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
+              <img loading="lazy" decoding="async" width="600" height="400" src="assets/images/swaad-kewra-water-200ml.jpg" alt="Swaad Kewra Water 200ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
               <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
                 Div 01 • FMCG Distribution
               </span>
@@ -856,7 +856,7 @@
             <div class="p-5 space-y-3">
               <!-- Tier 2 & 3 -->
               <div>
-                <span class="text-[10px] font-extrabold text-[#6B7F72] uppercase tracking-wider block">Category: Sauces & Culinary Water</span>
+                <span class="text-[10px] font-extrabold text-[#4B6354] uppercase tracking-wider block">Category: Sauces & Culinary Water</span>
                 <h4 class="product-title text-base font-bold text-gray-900 mt-0.5">Swaad Kewra Water (200ml)</h4>
               </div>
 
@@ -876,7 +876,7 @@
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-500">Compliance / FSSAI:</span>
-                  <span class="font-semibold text-[#6B7F72]">FSSAI 20326101******98</span>
+                  <span class="font-semibold text-[#4B6354]">FSSAI 20326101******98</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-500">Shelf Life / Brand:</span>
@@ -889,7 +889,7 @@
           <!-- Tier 5 (MOQ) & Tier 6 (RFQ Trigger) -->
           <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between bg-white">
             <div>
-              <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest block">Tier 05 • MOQ</span>
+              <span class="text-[9px] font-bold text-gray-300 uppercase tracking-widest block">Tier 05 • MOQ</span>
               <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> 10 Cases</span>
             </div>
             <button onclick="addToRFQ('Swaad Kewra Water (200ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4 shadow-sm">
@@ -902,7 +902,7 @@
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="fmcg">
           <div>
             <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
-              <img src="assets/images/swaad-vinegar-700ml.jpg" alt="Swaad Synthetic Vinegar 700ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
+              <img loading="lazy" decoding="async" width="600" height="400" src="assets/images/swaad-vinegar-700ml.jpg" alt="Swaad Synthetic Vinegar 700ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
               <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
                 Div 01 • FMCG Distribution
               </span>
@@ -913,7 +913,7 @@
             
             <div class="p-5 space-y-3">
               <div>
-                <span class="text-[10px] font-extrabold text-[#6B7F72] uppercase tracking-wider block">Category: Sauces & Culinary Essentials</span>
+                <span class="text-[10px] font-extrabold text-[#4B6354] uppercase tracking-wider block">Category: Sauces & Culinary Essentials</span>
                 <h4 class="product-title text-base font-bold text-gray-900 mt-0.5">Swaad Synthetic Vinegar (700ml)</h4>
               </div>
 
@@ -932,7 +932,7 @@
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-500">Compliance / FSSAI:</span>
-                  <span class="font-semibold text-[#6B7F72]">FSSAI 20326101******98</span>
+                  <span class="font-semibold text-[#4B6354]">FSSAI 20326101******98</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-500">Shelf Life / Brand:</span>
@@ -944,7 +944,7 @@
 
           <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between bg-white">
             <div>
-              <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest block">Tier 05 • MOQ</span>
+              <span class="text-[9px] font-bold text-gray-300 uppercase tracking-widest block">Tier 05 • MOQ</span>
               <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> 10 Cases</span>
             </div>
             <button onclick="addToRFQ('Swaad Synthetic Vinegar (700ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4 shadow-sm">
@@ -957,7 +957,7 @@
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="fmcg">
           <div>
             <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
-              <img src="assets/images/swaad-red-chilli-sauce-700ml.jpg" alt="Swaad Red Chilli Sauce 700ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
+              <img loading="lazy" decoding="async" width="600" height="400" src="assets/images/swaad-red-chilli-sauce-700ml.jpg" alt="Swaad Red Chilli Sauce 700ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
               <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
                 Div 01 • FMCG Distribution
               </span>
@@ -968,7 +968,7 @@
             
             <div class="p-5 space-y-3">
               <div>
-                <span class="text-[10px] font-extrabold text-[#6B7F72] uppercase tracking-wider block">Category: Sauces & Culinary Essentials</span>
+                <span class="text-[10px] font-extrabold text-[#4B6354] uppercase tracking-wider block">Category: Sauces & Culinary Essentials</span>
                 <h4 class="product-title text-base font-bold text-gray-900 mt-0.5">Swaad Red Chilli Sauce (700ml)</h4>
               </div>
 
@@ -987,7 +987,7 @@
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-500">Compliance / FSSAI:</span>
-                  <span class="font-semibold text-[#6B7F72]">FSSAI 20326101******98</span>
+                  <span class="font-semibold text-[#4B6354]">FSSAI 20326101******98</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-500">Shelf Life / Brand:</span>
@@ -999,7 +999,7 @@
 
           <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between bg-white">
             <div>
-              <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest block">Tier 05 • MOQ</span>
+              <span class="text-[9px] font-bold text-gray-300 uppercase tracking-widest block">Tier 05 • MOQ</span>
               <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> 10 Cases</span>
             </div>
             <button onclick="addToRFQ('Swaad Red Chilli Sauce (700ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4 shadow-sm">
@@ -1012,7 +1012,7 @@
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="fmcg">
           <div>
             <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
-              <img src="assets/images/swaad-rose-water-700ml.jpg" alt="Swaad Rose Water 700ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
+              <img loading="lazy" decoding="async" width="600" height="400" src="assets/images/swaad-rose-water-700ml.jpg" alt="Swaad Rose Water 700ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
               <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
                 Div 01 • FMCG Distribution
               </span>
@@ -1023,7 +1023,7 @@
             
             <div class="p-5 space-y-3">
               <div>
-                <span class="text-[10px] font-extrabold text-[#6B7F72] uppercase tracking-wider block">Category: Sauces & Culinary Water</span>
+                <span class="text-[10px] font-extrabold text-[#4B6354] uppercase tracking-wider block">Category: Sauces & Culinary Water</span>
                 <h4 class="product-title text-base font-bold text-gray-900 mt-0.5">Swaad Premium Rose Water (700ml)</h4>
               </div>
 
@@ -1042,7 +1042,7 @@
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-500">Compliance / FSSAI:</span>
-                  <span class="font-semibold text-[#6B7F72]">FSSAI 20326101******98</span>
+                  <span class="font-semibold text-[#4B6354]">FSSAI 20326101******98</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-500">Shelf Life / Brand:</span>
@@ -1054,7 +1054,7 @@
 
           <div class="px-5 pb-5 pt-3 border-t border-gray-100 flex items-center justify-between bg-white">
             <div>
-              <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest block">Tier 05 • MOQ</span>
+              <span class="text-[9px] font-bold text-gray-300 uppercase tracking-widest block">Tier 05 • MOQ</span>
               <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> 10 Cases</span>
             </div>
             <button onclick="addToRFQ('Swaad Rose Water (700ml)', 'fmcg', '10 Cases')" class="btn-black text-xs py-2 px-4 shadow-sm">
@@ -1067,7 +1067,7 @@
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="fmcg">
           <div>
             <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
-              <img src="assets/images/swaad-rose-water-200ml.jpg" alt="Swaad Rose Water 200ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
+              <img loading="lazy" decoding="async" width="600" height="400" src="assets/images/swaad-rose-water-200ml.jpg" alt="Swaad Rose Water 200ml" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
               <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
                 Authorised CSA Zeppy
               </span>
@@ -1077,7 +1077,7 @@
             </div>
             
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+              <div class="flex items-center gap-2 text-[11px] text-[#4B6354] font-bold uppercase tracking-wider">
                 <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
                 <span>FMCG Distribution</span>
               </div>
@@ -1116,7 +1116,7 @@
                 <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
                 <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-boxes-packing text-[#C5A059] mr-1"></i> MOQ: 10 Cases</span>
               </div>
-              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">In Stock Hub</span>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#4B6354] px-2 py-0.5 rounded-full font-bold">In Stock Hub</span>
             </div>
 
             <button onclick="addToRFQ('Swaad Pure Rose Water 200ml', 'fmcg', '10 Cases')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
@@ -1133,14 +1133,14 @@
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden" data-category="construction">
           <div>
             <div class="h-56 relative overflow-hidden bg-gray-100 border-b border-gray-100">
-              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Construction Machinery Spare Parts" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img loading="lazy" decoding="async" width="600" height="400" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Construction Machinery Spare Parts" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
               <span class="absolute top-3 left-3 bg-[#111827] text-white px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider">
                 Div 02 • Construction & Industrial
               </span>
             </div>
             
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+              <div class="flex items-center gap-2 text-[11px] text-[#4B6354] font-bold uppercase tracking-wider">
                 <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
                 <span>Construction & Industrial Supply</span>
               </div>
@@ -1179,7 +1179,7 @@
                 <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
                 <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-gears text-[#C5A059] mr-1"></i> MOQ: 10 Sets</span>
               </div>
-              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">OEM Certified</span>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#4B6354] px-2 py-0.5 rounded-full font-bold">OEM Certified</span>
             </div>
 
             <button onclick="addToRFQ('Construction Machinery Spare Parts', 'construction', '10 Sets')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
@@ -1192,14 +1192,14 @@
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden" data-category="construction">
           <div>
             <div class="h-56 relative overflow-hidden bg-gray-100 border-b border-gray-100">
-              <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=600&q=80" alt="Industrial Machinery Lubricants & Oils" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img loading="lazy" decoding="async" width="600" height="400" src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=600&q=80" alt="Industrial Machinery Lubricants & Oils" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
               <span class="absolute top-3 left-3 bg-[#111827] text-white px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider">
                 Div 02 • Construction & Industrial
               </span>
             </div>
             
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+              <div class="flex items-center gap-2 text-[11px] text-[#4B6354] font-bold uppercase tracking-wider">
                 <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
                 <span>Construction & Industrial Supply</span>
               </div>
@@ -1238,7 +1238,7 @@
                 <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
                 <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-oil-can text-[#C5A059] mr-1"></i> MOQ: 2 Barrels</span>
               </div>
-              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">Bulk Drums</span>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#4B6354] px-2 py-0.5 rounded-full font-bold">Bulk Drums</span>
             </div>
 
             <button onclick="addToRFQ('Industrial Machinery Lubricants & Oils', 'construction', '2 Barrels')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
@@ -1251,14 +1251,14 @@
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden" data-category="construction">
           <div>
             <div class="h-56 relative overflow-hidden bg-gray-100 border-b border-gray-100">
-              <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=600&q=80" alt="TMT Rebars & Cement Supply" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img loading="lazy" decoding="async" width="600" height="400" src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=600&q=80" alt="TMT Rebars & Cement Supply" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
               <span class="absolute top-3 left-3 bg-[#111827] text-white px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider">
                 Div 02 • Construction & Industrial
               </span>
             </div>
             
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+              <div class="flex items-center gap-2 text-[11px] text-[#4B6354] font-bold uppercase tracking-wider">
                 <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
                 <span>Construction & Industrial Supply</span>
               </div>
@@ -1297,7 +1297,7 @@
                 <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
                 <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-cubes text-[#C5A059] mr-1"></i> MOQ: 5 Tonnes</span>
               </div>
-              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">Trailer Logistics</span>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#4B6354] px-2 py-0.5 rounded-full font-bold">Trailer Logistics</span>
             </div>
 
             <button onclick="addToRFQ('TMT Rebars & Cement', 'construction', '5 MT')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
@@ -1310,7 +1310,7 @@
         <div class="product-card east-card p-0 flex flex-col justify-between overflow-hidden border-t-4 border-t-[#C5A059]" data-category="tea">
           <div>
             <div class="h-56 relative overflow-hidden bg-white p-3 flex items-center justify-center border-b border-gray-100">
-              <img src="assets/images/cd-gold-tea-packaging.jpg" alt="CD Gold Tea Premium Assam Tea Pouch" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
+              <img loading="lazy" decoding="async" width="600" height="400" src="assets/images/cd-gold-tea-packaging.jpg" alt="CD Gold Tea Premium Assam Tea Pouch" class="h-full w-auto object-contain group-hover:scale-105 transition duration-500">
               <span class="absolute top-3 left-3 bg-[#111827] text-[#C5A059] px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
                 Div 03 • Assam Tea Packaging
               </span>
@@ -1320,7 +1320,7 @@
             </div>
             
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-2 text-[11px] text-[#6B7F72] font-bold uppercase tracking-wider">
+              <div class="flex items-center gap-2 text-[11px] text-[#4B6354] font-bold uppercase tracking-wider">
                 <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">1</span>
                 <span>Assam Tea Label & Packaging</span>
               </div>
@@ -1359,7 +1359,7 @@
                 <span class="w-5 h-5 rounded-full bg-[#111827] text-[#C5A059] text-[9px] flex items-center justify-center font-extrabold">5</span>
                 <span class="text-xs font-extrabold text-gray-900"><i class="fa-solid fa-mug-hot text-[#C5A059] mr-1"></i> MOQ: 50 Pouches</span>
               </div>
-              <span class="text-[10px] bg-[#C5A059]/20 text-[#6B7F72] px-2 py-0.5 rounded-full font-bold">Direct Garden</span>
+              <span class="text-[10px] bg-[#C5A059]/20 text-[#4B6354] px-2 py-0.5 rounded-full font-bold">Direct Garden</span>
             </div>
 
             <button onclick="addToRFQ('CD Gold Tea (250g Pouch)', 'tea', '50 Pouches')" class="btn-black text-xs w-full justify-center shadow-sm py-2.5">
@@ -1387,7 +1387,7 @@
         
         <div class="east-card p-3 bg-white">
           <div class="east-img-frame h-52 mb-3">
-            <img src="assets/images/2.jpeg" alt="CD Group Wall Display Logo" class="w-full h-full object-cover">
+            <img src="assets/images/2.jpeg" alt="CD Group Wall Display Logo" width="600" height="400" loading="eager" fetchpriority="high" decoding="async" class="w-full h-full object-cover">
           </div>
           <h4 class="font-bold text-sm text-gray-900">Logo Wall Unit</h4>
           <p class="text-xs text-gray-500 mt-0.5">Corporate Brand Signage</p>
@@ -1395,7 +1395,7 @@
 
         <div class="east-card p-3 bg-white">
           <div class="east-img-frame h-52 mb-3">
-            <img src="assets/images/3.jpeg" alt="CD Group Executive Desk Room" class="w-full h-full object-cover">
+            <img loading="lazy" decoding="async" width="600" height="400" src="assets/images/3.jpeg" alt="CD Group Executive Desk Room" class="w-full h-full object-cover">
           </div>
           <h4 class="font-bold text-sm text-gray-900">Executive Office</h4>
           <p class="text-xs text-gray-500 mt-0.5">Management Suite</p>
@@ -1403,7 +1403,7 @@
 
         <div class="east-card p-3 bg-white">
           <div class="east-img-frame h-52 mb-3">
-            <img src="assets/images/1.jpeg" alt="CD Group Workstations" class="w-full h-full object-cover">
+            <img loading="lazy" decoding="async" width="600" height="400" src="assets/images/1.jpeg" alt="CD Group Workstations" class="w-full h-full object-cover">
           </div>
           <h4 class="font-bold text-sm text-gray-900">Workstation Hub</h4>
           <p class="text-xs text-gray-500 mt-0.5">Administrative Desks</p>
@@ -1411,7 +1411,7 @@
 
         <div class="east-card p-3 bg-white">
           <div class="east-img-frame h-52 mb-3">
-            <img src="assets/images/9.jpeg" alt="CD Group Reception Emblem" class="w-full h-full object-cover">
+            <img loading="lazy" decoding="async" width="600" height="400" src="assets/images/9.jpeg" alt="CD Group Reception Emblem" class="w-full h-full object-cover">
           </div>
           <h4 class="font-bold text-sm text-gray-900">Reception Crest</h4>
           <p class="text-xs text-gray-500 mt-0.5">Headquarters Desk</p>
@@ -1625,7 +1625,7 @@
           Tailored Enterprise Capabilities
         </span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Comprehensive B2B Solutions</h2>
-        <p class="text-sm text-gray-400">Driving end-to-end supply chain efficiency across Assam and Northeast India.</p>
+        <p class="text-sm text-gray-300">Driving end-to-end supply chain efficiency across Assam and Northeast India.</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -1818,23 +1818,23 @@
           <form id="rfqSubmitForm" class="space-y-5">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
-                <label class="block text-xs font-semibold text-gray-700 mb-1">Full Name *</label>
-                <input type="text" name="client_name" required placeholder="e.g. Rahul Sharma" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+                <label for="rfq_client_name" class="block text-xs font-semibold text-gray-700 mb-1">Full Name *</label>
+                <input type="text" id="rfq_client_name" name="client_name" required placeholder="e.g. Rahul Sharma" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
               </div>
 
               <div>
-                <label class="block text-xs font-semibold text-gray-700 mb-1">Company / Firm Name</label>
-                <input type="text" name="company_name" placeholder="e.g. Sharma Traders" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+                <label for="rfq_company_name" class="block text-xs font-semibold text-gray-700 mb-1">Company / Firm Name</label>
+                <input type="text" id="rfq_company_name" name="company_name" placeholder="e.g. Sharma Traders" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
               </div>
 
               <div>
-                <label class="block text-xs font-semibold text-gray-700 mb-1">Mobile Phone / WhatsApp *</label>
-                <input type="tel" name="phone" required placeholder="+91 98765 43210" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+                <label for="rfq_phone" class="block text-xs font-semibold text-gray-700 mb-1">Mobile Phone / WhatsApp *</label>
+                <input type="tel" id="rfq_phone" name="phone" required placeholder="+91 98765 43210" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
               </div>
 
               <div>
-                <label class="block text-xs font-semibold text-gray-700 mb-1">Target Delivery State *</label>
-                <select name="state" required class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+                <label for="rfq_state" class="block text-xs font-semibold text-gray-700 mb-1">Target Delivery State *</label>
+                <select id="rfq_state" name="state" required class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
                   <option value="Assam">Assam</option>
                   <option value="Meghalaya">Meghalaya</option>
                   <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -1848,8 +1848,8 @@
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-gray-700 mb-1">Product Requirements & Quantities</label>
-              <textarea name="message" rows="4" placeholder="Specify requirements (e.g. 50 Cases Swaad Sauces, 10 MT TMT Bars, 50 Pouches CD Gold Tea)..." class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900"></textarea>
+              <label for="rfq_message" class="block text-xs font-semibold text-gray-700 mb-1">Product Requirements & Quantities</label>
+              <textarea id="rfq_message" name="message" rows="4" placeholder="Specify requirements (e.g. 50 Cases Swaad Sauces, 10 MT TMT Bars, 50 Pouches CD Gold Tea)..." class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900"></textarea>
             </div>
 
             <button type="submit" class="btn-black w-full justify-center py-3.5">
@@ -1925,7 +1925,7 @@
           Northeast India Regional Sourcing Index
         </span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-white">B2B Distribution Network Across Assam & Northeast</h2>
-        <p class="text-xs sm:text-sm text-gray-400 mt-2">Connecting Manufacturers, Stockists, Super Stockists, and Commercial Buyers Across All 8 Northeast Indian States.</p>
+        <p class="text-xs sm:text-sm text-gray-300 mt-2">Connecting Manufacturers, Stockists, Super Stockists, and Commercial Buyers Across All 8 Northeast Indian States.</p>
       </div>
 
       <!-- 4-Column Keyword Cluster Matrix -->
@@ -1998,7 +1998,7 @@
       </div>
 
       <!-- 8 Northeast States Targeted Hub Badges -->
-      <div class="pt-6 border-t border-gray-800 flex flex-wrap items-center justify-center gap-2 text-[11px] text-gray-400">
+      <div class="pt-6 border-t border-gray-800 flex flex-wrap items-center justify-center gap-2 text-[11px] text-gray-300">
         <span class="font-bold text-[#C5A059] uppercase mr-1"><i class="fa-solid fa-map-location-dot"></i> Dedicated Location Pages:</span>
         <a href="assam/" class="px-3 py-1 rounded-full bg-[#111827] border border-gray-700 text-gray-200 hover:text-[#C5A059] hover:border-[#C5A059] font-semibold transition">Assam</a>
         <a href="guwahati/" class="px-3 py-1 rounded-full bg-[#111827] border border-gray-700 text-gray-200 hover:text-[#C5A059] hover:border-[#C5A059] font-semibold transition">Guwahati Hub</a>
@@ -2020,7 +2020,7 @@
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-gray-800">
         <div>
           <span class="text-xl font-extrabold tracking-tight text-white block">CD GROUP</span>
-          <p class="text-gray-400 text-xs mt-1">B2B Distribution • Trading • Sourcing • Supply | Serving Assam & Northeast India</p>
+          <p class="text-gray-300 text-xs mt-1">B2B Distribution • Trading • Sourcing • Supply | Serving Assam & Northeast India</p>
         </div>
         <div class="flex items-center gap-5 text-gray-300 font-semibold flex-wrap text-xs">
           <a href="#about-profile" class="hover:text-white transition">About Us</a>
@@ -2035,7 +2035,7 @@
         </div>
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-400 text-[11px]">
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-300 text-[11px]">
         <p>&copy; 2026 CD Group. All Rights Reserved. Maligaon Gate No-3, NFR Railway HQ, Near HDFC Bank, Maligaon, Guwahati, Assam - 781011.</p>
         <p>FSSAI: 20326101******98 | GSTIN: 18AULPD****A2Z8 | MSME UDYAM-AS-03-009**** | GMC: 17821062******61</p>
       </div>
@@ -2048,7 +2048,7 @@
     <div class="modal-container p-6 sm:p-8">
       <div class="flex items-center justify-between pb-4 mb-4 border-b border-gray-200">
         <h3 class="text-lg font-bold text-gray-900">Your B2B Quote Basket</h3>
-        <button id="closeRFQBtn" class="text-gray-400 hover:text-gray-800 text-2xl">&times;</button>
+        <button id="closeRFQBtn" aria-label="Close Quotation Basket Modal" class="text-gray-300 hover:text-gray-800 text-2xl">&times;</button>
       </div>
       
       <div id="rfqItemsContainer">
@@ -2068,7 +2068,7 @@
     <div class="modal-container p-6 sm:p-8">
       <div class="flex items-center justify-between pb-4 mb-4 border-b border-gray-200">
         <h3 id="certTitle" class="text-lg font-bold text-gray-900">Government Certificate</h3>
-        <button onclick="closeModal('certModal')" class="text-gray-400 hover:text-gray-800 text-2xl">&times;</button>
+        <button onclick="closeModal('certModal')" aria-label="Close Certificate Modal" class="text-gray-300 hover:text-gray-800 text-2xl">&times;</button>
       </div>
       <div id="certContent">
         <!-- JS inserts certificate details & view link -->
@@ -2086,23 +2086,23 @@
           </h3>
           <p class="text-xs text-gray-500">Register your business entity for wholesale rates & credit terms.</p>
         </div>
-        <button onclick="closeRegisterModal()" class="text-gray-400 hover:text-gray-800 text-2xl">&times;</button>
+        <button onclick="closeRegisterModal()" aria-label="Close Customer Registration Modal" class="text-gray-300 hover:text-gray-800 text-2xl">&times;</button>
       </div>
       
       <form id="b2bRegisterForm" class="space-y-4 text-xs">
         <div>
-          <label class="block font-semibold text-gray-700 mb-1">Company / Firm Name *</label>
-          <input type="text" name="reg_company" required placeholder="e.g. Northeast Retail Traders Pvt Ltd" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+          <label for="reg_company" class="block font-semibold text-gray-700 mb-1">Company / Firm Name *</label>
+          <input type="text" id="reg_company" name="reg_company" required placeholder="e.g. Northeast Retail Traders Pvt Ltd" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <label class="block font-semibold text-gray-700 mb-1">GSTIN Number</label>
-            <input type="text" name="reg_gstin" placeholder="18XXXXXXXXXX1Z" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+            <label for="reg_gstin" class="block font-semibold text-gray-700 mb-1">GSTIN Number</label>
+            <input type="text" id="reg_gstin" name="reg_gstin" placeholder="18XXXXXXXXXX1Z" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
           </div>
           <div>
-            <label class="block font-semibold text-gray-700 mb-1">Customer Type *</label>
-            <select name="reg_type" required class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+            <label for="reg_type" class="block font-semibold text-gray-700 mb-1">Customer Type *</label>
+            <select id="reg_type" name="reg_type" required class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
               <option value="Wholesaler">Wholesaler</option>
               <option value="Super Stockist / Dealer">Super Stockist / Dealer</option>
               <option value="Retail Chain">Retail Chain</option>
@@ -2114,23 +2114,23 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <label class="block font-semibold text-gray-700 mb-1">Contact Person *</label>
-            <input type="text" name="reg_person" required placeholder="Your Full Name" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+            <label for="reg_person" class="block font-semibold text-gray-700 mb-1">Contact Person *</label>
+            <input type="text" id="reg_person" name="reg_person" required placeholder="Your Full Name" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
           </div>
           <div>
-            <label class="block font-semibold text-gray-700 mb-1">Phone / Mobile *</label>
-            <input type="tel" name="reg_phone" required placeholder="+91 98XXXXXXXX" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+            <label for="reg_phone" class="block font-semibold text-gray-700 mb-1">Phone / Mobile *</label>
+            <input type="tel" id="reg_phone" name="reg_phone" required placeholder="+91 98XXXXXXXX" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
           </div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <label class="block font-semibold text-gray-700 mb-1">Business Email</label>
-            <input type="email" name="reg_email" placeholder="name@firm.com" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+            <label for="reg_email" class="block font-semibold text-gray-700 mb-1">Business Email</label>
+            <input type="email" id="reg_email" name="reg_email" placeholder="name@firm.com" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
           </div>
           <div>
-            <label class="block font-semibold text-gray-700 mb-1">District / Location *</label>
-            <input type="text" name="reg_district" required placeholder="Guwahati / Jorhat / Shillong" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
+            <label for="reg_district" class="block font-semibold text-gray-700 mb-1">District / Location *</label>
+            <input type="text" id="reg_district" name="reg_district" required placeholder="Guwahati / Jorhat / Shillong" class="w-full bg-[#F4F5F0] border border-gray-300 rounded-xl p-3 text-xs text-gray-900 focus:outline-none focus:border-gray-900">
           </div>
         </div>
 
@@ -2143,10 +2143,10 @@
 
   <!-- FLOATING B2B QUICK ACTION BUTTONS -->
   <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-    <a href="https://wa.me/917086019990?text=Hello%20CD%20Group%20B2B%20Team%2C%20I%20would%20like%20to%20enquire%20about%20wholesale%20supply." target="_blank" rel="noopener" title="WhatsApp B2B Desk" class="w-12 h-12 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full flex items-center justify-center shadow-2xl transition hover:scale-110 text-2xl border-2 border-white">
+    <a href="https://wa.me/917086019990?text=Hello%20CD%20Group%20B2B%20Team%2C%20I%20would%20like%20to%20enquire%20about%20wholesale%20supply." target="_blank" rel="noopener" title="WhatsApp B2B Desk" aria-label="Contact CD Group B2B Desk on WhatsApp" class="w-12 h-12 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full flex items-center justify-center shadow-2xl transition hover:scale-110 text-2xl border-2 border-white">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
-    <a href="tel:+913614553088" title="Call CD Group Desk" class="w-12 h-12 bg-[#0B192C] hover:bg-[#1E293B] text-[#C5A059] rounded-full flex items-center justify-center shadow-2xl transition hover:scale-110 text-xl border-2 border-[#C5A059]">
+    <a href="tel:+913614553088" title="Call CD Group Desk" aria-label="Call CD Group Office Landline" class="w-12 h-12 bg-[#0B192C] hover:bg-[#1E293B] text-[#C5A059] rounded-full flex items-center justify-center shadow-2xl transition hover:scale-110 text-xl border-2 border-[#C5A059]">
       <i class="fa-solid fa-phone"></i>
     </a>
   </div>

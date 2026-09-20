@@ -32,7 +32,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-[#F4F5F0] text-gray-900 min-h-screen flex flex-col justify-between font-['Plus_Jakarta_Sans',sans-serif]">
@@ -49,7 +50,7 @@
   <header class="bg-[#0B192C] text-white py-4 border-b border-gray-800">
     <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3">
-        <img src="assets/images/logo.png" alt="CD Group Logo" class="w-10 h-10 rounded-full border border-[#C5A059]">
+        <img loading="eager" decoding="async" width="40" height="40" src="assets/images/logo.png" alt="CD Group Logo" class="w-10 h-10 rounded-full border border-[#C5A059]">
         <div>
           <span class="text-xl font-extrabold tracking-tight text-white block">CD GROUP</span>
           <span class="text-[9px] text-[#C5A059] uppercase font-bold tracking-widest">B2B Distribution & Sourcing</span>
@@ -108,7 +109,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-[#07111E] text-gray-400 py-6 text-xs border-t border-gray-800 text-center">
+  <footer class="bg-[#07111E] text-gray-300 py-6 text-xs border-t border-gray-800 text-center">
     <div class="max-w-7xl mx-auto px-4">
       <p>&copy; 2026 CD Group. All Rights Reserved. Maligaon Gate No-3, Guwahati, Assam - 781011 | Phone: +91 361 4553088</p>
     </div>
