@@ -324,8 +324,10 @@ document.addEventListener('DOMContentLoaded', () => {
               <div><strong class="text-gray-900">Principal Place:</strong> Maligaon Gate No-3, Near HDFC Bank, Guwahati</div>
             </div>
           </div>
-          <div class="text-center">
-            <a href="assets/images/GST.pdf" target="_blank" class="btn-black text-xs"><i class="fa-solid fa-file-pdf mr-1"></i> View Official GST PDF Document</a>
+          <div class="text-center pt-2">
+            <div class="p-2.5 bg-[#C5A059]/10 rounded-xl text-center text-xs font-bold text-[#0B192C] border border-[#C5A059]/30">
+              <i class="fa-solid fa-shield-check text-[#C5A059] mr-1"></i> Verified Statutory Registration — Active GST Filing
+            </div>
           </div>
         </div>
       `;
@@ -343,8 +345,10 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="col-span-2"><strong class="text-gray-900">Categories:</strong> FMCG Distributors | Construction & Supply | Tea Packaging</div>
             </div>
           </div>
-          <div class="text-center">
-            <a href="assets/images/TL.pdf" target="_blank" class="btn-black text-xs"><i class="fa-solid fa-file-pdf mr-1"></i> View Official Trade License PDF</a>
+          <div class="text-center pt-2">
+            <div class="p-2.5 bg-[#C5A059]/10 rounded-xl text-center text-xs font-bold text-[#0B192C] border border-[#C5A059]/30">
+              <i class="fa-solid fa-shield-check text-[#C5A059] mr-1"></i> Verified Municipal License — Valid to 31 March 2027
+            </div>
           </div>
         </div>
       `;
@@ -361,8 +365,10 @@ document.addEventListener('DOMContentLoaded', () => {
               <div><strong class="text-gray-900">Location:</strong> Kamrup Metro, Guwahati, Assam</div>
             </div>
           </div>
-          <div class="text-center">
-            <a href="assets/images/Udyam.pdf" target="_blank" class="btn-black text-xs"><i class="fa-solid fa-file-pdf mr-1"></i> View Official MSME Udyam PDF</a>
+          <div class="text-center pt-2">
+            <div class="p-2.5 bg-[#C5A059]/10 rounded-xl text-center text-xs font-bold text-[#0B192C] border border-[#C5A059]/30">
+              <i class="fa-solid fa-shield-check text-[#C5A059] mr-1"></i> Verified MSME Enterprise — UDYAM Certificate Active
+            </div>
           </div>
         </div>
       `;
@@ -381,8 +387,10 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="col-span-2"><strong class="text-gray-900">Premises:</strong> House No-190, Hillside Colony, Maligaon Gate No-1, Guwahati, Kamrup Metro, Assam - 781011</div>
             </div>
           </div>
-          <div class="text-center">
-            <a href="assets/images/FSSAI.pdf" target="_blank" class="btn-black text-xs"><i class="fa-solid fa-file-pdf mr-1"></i> View Official FSSAI Registration PDF</a>
+          <div class="text-center pt-2">
+            <div class="p-2.5 bg-[#C5A059]/10 rounded-xl text-center text-xs font-bold text-[#0B192C] border border-[#C5A059]/30">
+              <i class="fa-solid fa-shield-check text-[#C5A059] mr-1"></i> Verified Food Safety Registration — Valid to 18 July 2030
+            </div>
           </div>
         </div>
       `;
