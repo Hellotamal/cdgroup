@@ -218,20 +218,86 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // RFQ Submission Form
+  // RFQ Submission Form & CRM Integration
   const rfqSubmitForm = document.getElementById('rfqSubmitForm');
   if (rfqSubmitForm) {
     rfqSubmitForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const formData = new FormData(rfqSubmitForm);
-      const name = formData.get('client_name');
-      const company = formData.get('company_name');
+      const name = formData.get('client_name') || 'Customer';
+      const company = formData.get('company_name') || 'Business Entity';
+      const phone = formData.get('phone') || '';
+      const email = formData.get('email') || '';
+      const gstin = formData.get('gstin') || 'N/A';
+      const city = formData.get('city') || 'Guwahati';
+      const notes = formData.get('notes') || '';
 
-      showToast(`Thank you ${name}! Your quotation request for ${company || 'your business'} has been received.`);
+      const quoteRef = 'CD-RFQ-' + Math.floor(100000 + Math.random() * 900000);
+      const crmLead = {
+        lead_id: quoteRef,
+        timestamp: new Date().toISOString(),
+        client_name: name,
+        company_name: company,
+        phone: phone,
+        email: email,
+        gstin: gstin,
+        city: city,
+        notes: notes,
+        items: rfqCart
+      };
+
+      // Save to CRM Leads LocalStorage
+      const existingLeads = JSON.parse(localStorage.getItem('cd_b2b_crm_leads') || '[]');
+      existingLeads.push(crmLead);
+      localStorage.setItem('cd_b2b_crm_leads', JSON.stringify(existingLeads));
+
+      showToast(`Quotation ${quoteRef} received for ${company}! Our sales desk will contact you at ${phone || 'your phone'}.`);
       rfqCart = [];
       updateRFQCount();
       if (rfqModalOverlay) rfqModalOverlay.classList.remove('active');
       rfqSubmitForm.reset();
+    });
+  }
+
+  // B2B Registration Modal Handler
+  window.openRegisterModal = function() {
+    const registerModal = document.getElementById('registerModal');
+    if (registerModal) registerModal.classList.add('active');
+  };
+
+  window.closeRegisterModal = function() {
+    const registerModal = document.getElementById('registerModal');
+    if (registerModal) registerModal.classList.remove('active');
+  };
+
+  const b2bRegisterForm = document.getElementById('b2bRegisterForm');
+  if (b2bRegisterForm) {
+    b2bRegisterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(b2bRegisterForm);
+      const company = formData.get('reg_company') || 'Vendor Entity';
+      const gstin = formData.get('reg_gstin') || 'Pending';
+      const regId = 'CD-REG-' + Math.floor(100000 + Math.random() * 900000);
+
+      const customerProfile = {
+        reg_id: regId,
+        timestamp: new Date().toISOString(),
+        company: company,
+        gstin: gstin,
+        contact_person: formData.get('reg_person'),
+        phone: formData.get('reg_phone'),
+        email: formData.get('reg_email'),
+        customer_type: formData.get('reg_type'),
+        district: formData.get('reg_district')
+      };
+
+      const existingCustomers = JSON.parse(localStorage.getItem('cd_b2b_registered_customers') || '[]');
+      existingCustomers.push(customerProfile);
+      localStorage.setItem('cd_b2b_registered_customers', JSON.stringify(existingCustomers));
+
+      showToast(`B2B Registration Successful! Account ID ${regId} created for ${company}.`);
+      closeRegisterModal();
+      b2bRegisterForm.reset();
     });
   }
 
